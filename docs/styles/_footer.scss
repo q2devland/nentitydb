@@ -1,0 +1,171 @@
+﻿footer {
+    width: 100%;
+    min-height: 300px;
+    background-color: $footerBackgroundColor;
+
+    .docsFooter {
+        background-color: $docsFooterColor;
+        width: 100%;
+        height: 100px;
+
+        ul {
+            margin-top: 0;
+            margin-left: 0;
+            padding-left: 0;
+            list-style-type: none;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .featuresCard {
+                background-color: $homeFeaturesCardBackgroundColor;
+
+                :hover {
+                    background-color: $homeFeaturesCardHoverBackgroundColor;
+                }
+            }
+
+            .learnCard {
+                background-color: $homeLearnCardBackgroundColor;
+
+                :hover {
+                    background-color: $homeLearnCardHoverBackgroundColor;
+                }
+            }
+
+            .providersCard {
+                background-color: $homeProvidersCardBackgroundColor;
+
+                :hover {
+                    background-color: $homeProvidersCardHoverBackgroundColor;
+                }
+            }
+
+            li {
+                height: 100%;
+
+                div {
+                    width: 100px;
+                    height: 100%;
+
+                    a {
+                        @extend .alignVerticalCenter;
+                        @extend .alignHorizontalMiddle;
+                        cursor: pointer;
+                        text-decoration: none;
+                        height: 100%;
+                        width: 100%;
+                        color: #616161;
+
+                        i {
+                            font-size: 32px;
+                        }
+                    }
+
+                    a:active {
+                        color: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .blocks {
+        @extend .alignHorizontalMiddle;
+        margin-bottom: 2rem;
+
+        .blockRow {
+            float: left;
+
+            .block {
+                float: left;
+                padding: 0 28px;
+                width: 220px;
+
+                .heading {
+                    color: #616161;
+                    word-break: break-word;
+                    font-size: 15px;
+                    line-height: 20px;
+                    padding: 36px 0 4px;
+                    font-weight: 700;
+                }
+
+                ul {
+                    line-height: 16px;
+                    margin-top: 0;
+                    padding-left: 0;
+                    list-style-type: none;
+                    margin-left: 0;
+
+                    li {
+                        margin: 0;
+                        padding: 8px 0;
+                        word-break: break-word;
+                        font-size: 15px;
+                        color: rgb(50, 49, 48);
+                        font-weight: 400;
+
+                        a {
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: rgb(50, 49, 48);
+
+                            &:hover {
+                                text-decoration-line: underline;
+                            }
+
+                            &:visited {
+                                text-decoration: none;
+                                color: rgb(50, 49, 48);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        .blocks {
+            display: table;
+
+            .blockRow {
+                width: 50%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        .blocks {
+            .blockRow {
+                width: 100%;
+                padding-left: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        .blocks {
+            .blockRow {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    footer {
+        .docsFooter {
+            display: none;
+        }
+    }
+}

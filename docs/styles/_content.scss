@@ -1,0 +1,225 @@
+﻿.body-content {
+    .article {
+        margin-top: 80px;
+    }
+
+    article {
+        .summary {
+            margin-bottom: 0;
+            margin-top: 28px;
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        h4 {
+            color: rgb(23, 23, 23);
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 32px
+        }
+
+        h1 {
+            color: rgb(23, 23, 23);
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        .inheritance {
+            margin-top: 24px;
+        }
+
+        .implements {
+            margin-top: 24px;
+
+            h5 {
+                padding-bottom: 5px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+
+        .inheritedMembers {
+            margin-top: 24px;
+        }
+
+        h6 {
+            color: rgb(94, 94, 94);
+            font-size: 14px;
+            font-weight: normal;
+
+            strong {
+                font-weight: normal;
+            }
+
+            a {
+                font-weight: normal;
+            }
+        }
+
+        h5 {
+            font-size: 15px;
+            padding-top: 10px;
+        }
+
+        h3 {
+            color: rgb(23, 23, 23);
+            font-size: 28px;
+            font-weight: 600 !important;
+            margin-bottom: 12px;
+            margin-top: 56px;
+        }
+
+        .table-responsive {            
+            table {
+                border: 0;
+
+                thead {
+                    display: none;
+                }
+
+                tbody {
+                    tr {
+                        background-color: white;
+
+                        td {
+                            padding-bottom: 12px;
+                            padding-left: 16px;
+                            padding-right: 16px;
+                            padding-top: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+
+                        > td {
+                            width: 33% !important;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .table-bordered {
+                border-left-style: hidden;
+                border-right-style: hidden;
+                border-bottom-style: hidden;
+
+                > tbody > tr > td {
+                    border-right-style: hidden;
+                }
+            }
+        }
+
+        .parametername {
+            font-style: normal;
+            font-weight: 600;
+            font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+            color: rgb(51, 51, 51);
+            opacity: 0.7;
+        }
+
+        .header5 {
+            color: rgb(23, 23, 23);
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 36px;
+        }
+
+
+        .parameters {
+            @extend .header5;
+        }
+
+        .propertyValue {
+            @extend .header5;
+        }
+
+        .typeParameters {
+            @extend .header5;
+        }
+
+        .returns {
+            @extend .header5;
+        }
+
+        h5.implements {
+            @extend .header5;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .overrides {
+            @extend .header5;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /*.paramItem {
+            overflow: hidden;
+            word-wrap: break-word;
+            white-space: normal;
+            word-break: break-word;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(23, 23, 23);
+            margin-top: 24px;
+
+            dl {
+                display: flex;
+                max-width: 100%;
+                margin: 0;
+
+                dt {
+                    background-color: rgb(250, 250, 250);
+                    display: inline-block;
+                    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+                    font-weight: 600;
+                    padding: 0 6px 2px;
+                }
+
+                dd {
+                    margin-left: 12px;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                    white-space: normal;
+                    word-break: break-word;
+                }
+            }
+
+            p {
+                margin-top: 2px;
+            }
+        }*/
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .body-content {
+        width: 90%;
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body-content {
+        .article {
+            margin-top: 0 !important;
+        }
+
+        article {
+            .table-responsive { 
+                border: 0;
+            }
+        }
+    }
+}

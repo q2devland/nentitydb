@@ -1,0 +1,104 @@
+﻿.navbar {
+    background-color: white;
+
+    .container {
+
+        .productName {
+            padding-top: 14px;
+            padding-bottom: 10px;
+            padding-right: 14px;
+
+            .navbar-brand {
+                height: unset;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                color: #262626 !important;
+
+                &:hover {
+                    border-bottom-width: 2px;
+                    border-bottom-style: solid;
+                    padding-bottom: 2px;
+                }
+            }
+        }
+
+        .nav {
+            list-style-type: none;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            display: flex;
+            flex-direction: row;
+            padding-inline-start: 16px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            height: 100%;
+
+            li {
+                padding-left: 10px;
+                padding-right: 10px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 13px;
+                    color: #262626;
+                    padding-top: 12px;
+                    padding-bottom: 10px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    display: inline-block;
+                    margin-top: 3px;
+
+                    &:hover {
+                        border-bottom-width: 2px;
+                        border-bottom-style: solid;
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-inverse {
+    border-color: rgb(230, 230, 230);
+}
+
+.navbar-default {
+    border: 0;
+}
+
+
+@media (min-width: 1500px) {
+    .navbar {
+        .container {
+            width: 90%;
+            max-width: 1600px;
+        }
+    }
+
+    .subnav {
+        .container {
+            width: 90%;
+            max-width: 1600px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        .container {
+            .navbar-header {
+                float: left;
+            }
+        }
+    }
+
+    #navbar {
+        display: block;
+        border-color: transparent;
+    }
+}
