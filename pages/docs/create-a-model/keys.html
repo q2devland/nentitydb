@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  
+
+  <title>Keys | NEntityDb</title> 
+  <meta property="title" content="Keys | NEntityDb">
+  <meta property="og:title" content="Keys | NEntityDb">
+  <meta name="description" content="A key serves as a unique identifier for each entity instance, which maps to the concept of a primary key in relational databases.">
+  <meta property="og:description" content="A key serves as a unique identifier for each entity instance, which maps to the concept of a primary key in relational databases.">
+  <script type="application/ld+json">
+    {"headline":"Keys | NEntityDb","url":"http://localhost:4000/pages/docs/create-a-model/keys.html","description":"A key serves as a unique identifier for each entity instance, which maps to the concept of a primary key in relational databases.","@type":"WebPage","@context":"https://schema.org"}
+  </script>
+<link rel="canonical" href="http://localhost:4000/pages/docs/create-a-model/keys.html">
+<meta property="og:locale" content="en_US"> 
+<meta property="og:url" content="http://localhost:4000/pages/docs/create-a-model/keys.html">
+<meta property="og:site_name" content="NEntityDb">
+<!-- <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" /> -->
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script src="/assets/js/external/resize-observer.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/header.js"></script>    
+    <script src="/assets/js/data.js"></script>
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="/assets/js/docs.js"></script>
+      <script src="/assets/js/header-sql-code.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async data-cookieyes="cookieyes-analytics" src="https://www.googletagmanager.com/gtag/js?id=G-63V0ZZKV9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63V0ZZKV9V');
+</script></head><body class="ms-Fabric"><header>    
+    <nav class="contextMenu">
+        <ul>
+            <li>
+                <a onclick="toggleMenu()" href="/pages/features.html">Features</a>
+            </li>
+            <li>
+                <a onclick="toggleMenu()" href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">Documentation</a>
+            </li>
+            <li>
+                <a onclick="toggleMenu()" href="/pages/pricing.html">Pricing</a>
+            </li>
+            <li>
+                <a onclick="toggleMenu()">Github</a>
+            </li>        
+        </ul>    
+    </nav>
+    <div class="horizontalLayout">
+        <div class="colAvailable"></div>
+        <div class="content">               
+            <div class="minContainer horizontalLayout">                                       
+                <div class="menuButton colAuto">
+                    <button onclick="toggleMenu()" title="Menu">
+                        <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
+                    </button>                
+                </div>
+                <div class="productName colAvailable">
+                    <a rel="author" href="/">NEntityDb</a>
+                </div>
+                <div class="rightSide colAuto"></div>
+            </div>
+            <div class="container">
+                <div class="productName">
+                    <a rel="author" href="/">NEntityDb</a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/pages/features.html">Features</a>
+                        </li>
+                        <li>
+                            <a href="/pages/docs/get-started/install-nentitydb-on-.net.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="/pages/pricing.html">Pricing</a>
+                        </li>        
+                    </ul>
+                </nav>
+
+                <div class="githubIcon">
+                    <a href="https://github.com/q2devland/nentitydb" title="Github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="colAvailable"></div>
+    </div>
+</header><main class="verticalLayout">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="docsContainer horizontalLayout">
+  <div class="colAvailable"></div>
+  <div class="docsPage verticalLayout">
+    <div class="docsMenuButton">
+      <button onclick="toggleMenuDocs()" title="Table of contents">
+          <div class="docsMenuButtonContent horizontalLayout">
+            <i class="ms-Icon ms-Icon--BulletedList" aria-hidden="true"></i>
+            <div>
+                Table of contents
+            </div>              
+          </div>
+      </button>
+      <div tabindex="-1" class="docsContextMenu" onclick="toggleMenuDocs()"> 
+          <div class="contextMenuContent verticalLayout" onclick="event.stopImmediatePropagation()">
+            <div class="header rowAuto horizontalLayout">
+              <div class="title colAvailable">
+                <h3>Table of contents</h3>
+              </div>
+              <div class="close">
+                <button onclick="toggleMenuDocs()">
+                  <i class="ms-Icon ms-Icon--ChromeClose" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="rowAvailable">        
+
+<div class="menuBlock">   
+    <div class="menuSearch">
+        <div class="inputSearch horizontalLayout">
+            <i class="filterIcon ms-Icon ms-Icon--FilterSettings" aria-hidden="true"></i>
+            <input id="txtFilterDocs1" type="text" placeholder="Filter by title"
+                onfocus="focusFilterDocs('txtFilterDocs1')"
+                onblur="blurFilterDocs('txtFilterDocs1')"
+                oninput="filterDocs(this.value)" />
+            <i class="closeFilterIcon ms-Icon ms-Icon--ChromeClose" aria-hidden="true" onclick="removeDocsFilter()"></i>
+        </div>
+    </div> 
+
+    <nav class="menuContent">
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Get started
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/install-nentitydb-on-.net.html">Install NEntityDb on .NET</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">Install NEntityDb on .NET Core</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/install-nentitydb-on-.net-framework.html">Install NEntityDb on .NET Framework</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/create-a-model.html">Create a model</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/insert,-read,-update-and-delete.html">Insert, read, update and delete</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter openedChapter">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Create a model
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/entity-types.html">Entity types</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/properties.html">Properties</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic activeTopic">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/keys.html">Keys</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/relationships.html">Relationships</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/triggers.html">Triggers</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/inheritance.html">Inheritance</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/value-conversions.html">Value conversions</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Query data
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/load-an-entity.html">Load an entity</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/load-an-entity-list.html">Load an entity list</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/get-a-scalar-value.html">Get a scalar value</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/load-related-data.html">Load related data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/subqueries.html">Subqueries</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/selecting-data.html">Selecting data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/filtering-data.html">Filtering data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/ordering-data.html">Ordering data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/grouping-data.html">Grouping data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/paging-data.html">Paging data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/aggregating-data.html">Aggregating data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Save data
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/save-data/insert-data.html">Insert data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/save-data/update-data.html">Update data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/save-data/delete-data.html">Delete data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Computed data
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/computed-property.html">Computed property</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/computed-relationship.html">Computed relationship</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/computed-join-conditions.html">Computed join conditions</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/functions.html">Functions</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Procedures
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/procedures/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/procedures/query-data.html">Query data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/procedures/save-data.html">Save data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Asynchronous Programming
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/asynchronous-programming/overview.html">Overview</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Dynamic queries
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/dynamic-queries/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/dynamic-queries/query-data.html">Query data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/dynamic-queries/save-data.html">Save data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Connections and transactions
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/connections-and-transactions/connections.html">Connections</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/connections-and-transactions/transactions.html">Transactions</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Database providers
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/microsoft-sql-server.html">Microsoft SQL Server</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/oracle-database.html">Oracle Database</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/mysql,-mariadb-and-percona-server.html">MySQL, MariaDB and Percona Server</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/postgresql.html">PostgreSQL</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/ibm-db2.html">IBM Db2</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/sqlite.html">SQLite</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/firebird.html">Firebird</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        How to
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/create-a-dbinstance.html">Create a DbInstance</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/change-default-data-conversion.html">Change default data conversion</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/implement-logical-delete.html">Implement logical delete</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/enable-sql-logging.html">Enable SQL logging</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/change-default-.net-data-provider.html">Change default .NET data provider</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/implement-table-per-hierarchy-(tph)-pattern.html">Implement table-per-hierarchy (TPH) pattern</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/work-with-non-nullable-types.html">Work with non-nullable types</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/register-a-license.html">Register a license</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        My first app
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/create-a-project.html">Create a project</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/configure-the-model.html">Configure the model</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/save-data.html">Save data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/query-data.html">Query data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/define-computed-data.html">Define computed data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        References
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/references/api-reference.html">API reference</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+           
+    </nav>
+
+    <nav class="menuFilteredContent">
+        <ul>           
+        </ul>
+    </nav>
+</div>-->
+            </div>
+          </div> 
+      </div>
+    </div>
+    <div class="docsLayout horizontalLayout">
+      <div class="docsMenu colAuto">        
+
+<div class="menuBlock">   
+    <div class="menuSearch">
+        <div class="inputSearch horizontalLayout">
+            <i class="filterIcon ms-Icon ms-Icon--FilterSettings" aria-hidden="true"></i>
+            <input id="txtFilterDocs2" type="text" placeholder="Filter by title"
+                onfocus="focusFilterDocs('txtFilterDocs2')"
+                onblur="blurFilterDocs('txtFilterDocs2')"
+                oninput="filterDocs(this.value)" />
+            <i class="closeFilterIcon ms-Icon ms-Icon--ChromeClose" aria-hidden="true" onclick="removeDocsFilter()"></i>
+        </div>
+    </div> 
+
+    <nav class="menuContent">
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Get started
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/install-nentitydb-on-.net.html">Install NEntityDb on .NET</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">Install NEntityDb on .NET Core</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/install-nentitydb-on-.net-framework.html">Install NEntityDb on .NET Framework</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/create-a-model.html">Create a model</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/get-started/insert,-read,-update-and-delete.html">Insert, read, update and delete</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter openedChapter">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Create a model
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/entity-types.html">Entity types</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/properties.html">Properties</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic activeTopic">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/keys.html">Keys</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/relationships.html">Relationships</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/triggers.html">Triggers</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/inheritance.html">Inheritance</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/create-a-model/value-conversions.html">Value conversions</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Query data
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/load-an-entity.html">Load an entity</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/load-an-entity-list.html">Load an entity list</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/get-a-scalar-value.html">Get a scalar value</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/load-related-data.html">Load related data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/subqueries.html">Subqueries</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/selecting-data.html">Selecting data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/filtering-data.html">Filtering data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/ordering-data.html">Ordering data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/grouping-data.html">Grouping data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/paging-data.html">Paging data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/query-data/aggregating-data.html">Aggregating data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Save data
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/save-data/insert-data.html">Insert data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/save-data/update-data.html">Update data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/save-data/delete-data.html">Delete data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Computed data
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/computed-property.html">Computed property</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/computed-relationship.html">Computed relationship</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/computed-join-conditions.html">Computed join conditions</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/computed-data/functions.html">Functions</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Procedures
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/procedures/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/procedures/query-data.html">Query data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/procedures/save-data.html">Save data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Asynchronous Programming
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/asynchronous-programming/overview.html">Overview</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Dynamic queries
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/dynamic-queries/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/dynamic-queries/query-data.html">Query data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/dynamic-queries/save-data.html">Save data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Connections and transactions
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/connections-and-transactions/connections.html">Connections</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/connections-and-transactions/transactions.html">Transactions</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        Database providers
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/microsoft-sql-server.html">Microsoft SQL Server</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/oracle-database.html">Oracle Database</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/mysql,-mariadb-and-percona-server.html">MySQL, MariaDB and Percona Server</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/postgresql.html">PostgreSQL</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/ibm-db2.html">IBM Db2</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/sqlite.html">SQLite</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/database-providers/firebird.html">Firebird</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        How to
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/create-a-dbinstance.html">Create a DbInstance</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/change-default-data-conversion.html">Change default data conversion</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/implement-logical-delete.html">Implement logical delete</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/enable-sql-logging.html">Enable SQL logging</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/change-default-.net-data-provider.html">Change default .NET data provider</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/implement-table-per-hierarchy-(tph)-pattern.html">Implement table-per-hierarchy (TPH) pattern</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/work-with-non-nullable-types.html">Work with non-nullable types</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/how-to/register-a-license.html">Register a license</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        My first app
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/overview.html">Overview</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/create-a-project.html">Create a project</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/configure-the-model.html">Configure the model</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/save-data.html">Save data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/query-data.html">Query data</a>
+                        </li>
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/my-first-app/define-computed-data.html">Define computed data</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+        
+
+               
+                    
+            
+                
+            
+
+            
+
+            
+            
+
+            <div class="menuChapter ">
+                <div class="chapterHeader horizontalLayout" onclick="toggleChapter(this)">
+                    <div class="icon">
+                        
+                            <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i>
+                        
+                    </div>                
+                    <div class="chapterTitle">
+                        References
+                    </div>
+                </div>      
+                <div>
+                    <ul class="chapterTopics">
+                           
+                                    
+                                
+                                
+                        
+
+                        
+
+                        <li class="topic ">
+                            <a onclick="toggleMenuDocs()" href="/pages/docs/references/api-reference.html">API reference</a>
+                        </li>
+                        
+                    </ul>
+                </div>          
+            </div>
+           
+    </nav>
+
+    <nav class="menuFilteredContent">
+        <ul>           
+        </ul>
+    </nav>
+</div></div>
+      <div class="docsMain colAvailable">
+          <div class="docsContent">
+              <h1>Keys</h1>
+              <p>A key serves as a unique identifier for each entity instance, which maps to the concept of a primary key in relational databases.</p>
+
+<div class="docs-warning-alert">
+    <div class="alert-title">
+        
+                <i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>
+                        
+        <span>
+            
+                    Warning
+                
+        </span>      
+    </div>
+    <div class="alert-text">
+        <p>In the NEntityDb it is mandatory to define a key for each entity type to be able to perform all the read, insert, update and delete operations successfully.</p>
+
+    </div>
+</div>
+<h2 id="configure-a-single-property">Configure a single property</h2>
+
+<p>You can configure a single property to be the primary key of an entity using the <code class="language-plaintext highlighter-rouge">WithPrimaryKey</code> method.</p>
+<div class="header-code">
+<div class="language">C#</div>
+<div style="width:100%;"></div>
+<div class="copyClipboard">
+    <button onclick="copyCodeToClipboard(this)">
+        <div class="icon alignVerticalMiddle"><i class="ms-Icon ms-Icon--Copy" aria-hidden="true"></i></div>
+        <span class="copyText">Copy</span>
+        <div class="iconDone alignVerticalMiddle"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></div>
+    </button>
+</div>
+</div>
+<pre class="lang-csharp"><code>public class DbCustomer: DbEntity&lt;Customer&gt;
+{
+    public DbCustomer()
+    {
+        //Table
+        this.ToTable("Customers");
+
+        //Persistent properties
+        this.Property(c =&gt; c.Id).ToColumn("CUS_Id").IsIdentity();
+        this.Property(c =&gt; c.FirstName).ToColumn("CUS_FirstName");
+        this.Property(c =&gt; c.LastName).ToColumn("CUS_LastName");
+        this.Property(c =&gt; c.TaxCode).ToColumn("CUS_TaxCode");
+        this.Property(c =&gt; c.Email).ToColumn("CUS_Email");
+        this.Property(c =&gt; c.IsActive).ToColumn("CUS_IsActive");
+        this.Property(c =&gt; c.BirthDate).ToColumn("CUS_BirthDate");
+        this.Property(c =&gt; c.DeathDate).ToColumn("CUS_DeathDate");
+        this.Property(c =&gt; c.Points).ToColumn("CUS_Points");
+        this.Property(c =&gt; c.CreationDate).ToColumn("CUS_CreationDate");
+        
+        //Primary key
+        this.<mark>WithPrimaryKey(c =&gt; c.Id)</mark>;    
+    }
+}</code></pre>
+
+<h2 id="configure-multiple-properties">Configure multiple properties</h2>
+
+<p>You can also configure multiple properties to be the key of an entity - this is known as a composite key.</p>
+<div class="header-code">
+<div class="language">C#</div>
+<div style="width:100%;"></div>
+<div class="copyClipboard">
+    <button onclick="copyCodeToClipboard(this)">
+        <div class="icon alignVerticalMiddle"><i class="ms-Icon ms-Icon--Copy" aria-hidden="true"></i></div>
+        <span class="copyText">Copy</span>
+        <div class="iconDone alignVerticalMiddle"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></div>
+    </button>
+</div>
+</div>
+<pre class="lang-csharp"><code>this.<mark>WithPrimaryKey(c =&gt; Property.ToArray(c.Id, c.TaxCode))</mark>;</code></pre>
+
+
+
+    
+    
+
+    
+        
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="docs-next-step">Next Step</h2>
+<p>
+    
+    <p>Learn more about <a href="/pages/docs/create-a-model/relationships.html">Relationships</a>.</p>
+</p>
+
+</div>
+      </div>
+      <div class="docsIndex colAuto">
+
+
+    
+    
+
+    
+        
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+<div class="indexBlock">
+  <div class="indexContent ">
+    <div class="indexTitle">
+      <h3>On this page</h3>
+    </div>
+    <div class="indexTopics">
+      <ul>
+  <li>
+    <p><a href="#configure-a-single-property">Configure a single property</a></p>
+  </li>
+  <li>
+    <p><a href="#configure-multiple-properties">Configure multiple properties</a></p>
+  </li>
+  <li>
+    <p><a href="#docs-next-step">Next Step</a></p>
+  </li>
+</ul>          
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+  </div>
+  <div class="colAvailable"></div>
+</div>
+    </main><footer>
+    
+        <div class="docsFooter horizontalLayout">
+            <div class="colAvailable">                
+            </div>
+            <ul>
+                <li>
+                    <div class="featuresCard" title="Features">
+                        <a href="/pages/features.html">
+                            <i class="ms-Icon ms-Icon--Bullseye" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="learnCard" title="Learn">
+                        <a href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">
+                            <i class="ms-Icon ms-Icon--Education" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="providersCard" title="Providers">
+                        <a href="/pages/docs/database-providers/overview.html">
+                            <i class="ms-Icon ms-Icon--OfflineStorage" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="colAvailable">                
+            </div>
+        </div><div class="blocks">
+        <div class="blockRow">
+            <div class="block">            
+                <div class="heading">Documentation</div>
+                <ul>
+                    <li>
+                        <a href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">Get started</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/create-a-model/overview.html">Create a model</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/query-data/overview.html">Query data</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/save-data/insert-data.html">Save data</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/computed-data/overview.html">Computed data</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/procedures/overview.html">Procedures</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/dynamic-queries/overview.html">Dynamic queries</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <div class="heading">Developer</div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/q2devland/nentitydb" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/my-first-app/overview.html">My first app</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/how-to/register-a-license.html">Register a license</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/q2devland/nentitydb/issues" target="_blank">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blockRow">
+            <div class="block">
+                <div class="heading">Pricing</div>
+                <ul>                    
+                    <li>
+                        <a href="/pages/pricing.html#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/pages/pricing.html#trial">Get a trial license</a>
+                    </li>
+                    <li>
+                        <a href="/pages/pricing.html#faq">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <div class="heading">Corporate</div>
+                <ul>                    
+                    <li>
+                        <a href="mailto:info@nentitydb.com">info@nentitydb.com</a>
+                    </li>
+                    <li>
+                        <a href="/pages/legal/terms-and-conditions.html">Terms and conditions</a>
+                    </li>                    
+                    <li>
+                        <a href="/pages/legal/privacy-policy.html">Privacy policy</a>
+                    </li>                    
+                    <li>
+                        <a href="/pages/legal/cookie-policy.html">Cookie policy</a>
+                    </li>                    
+                    <li>
+                        <a href="#" class="cky-banner-element">Cookie settings</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+
+</html>
+
+  
+<script>
+  resetFilterDocs();
+  setActiveTopic();
+  setChapters("[%7B%22title%22:%22Get%20started%22,%22key%22:%22GS%22,%22topics%22:[%7B%22title%22:%22Install%20NEntityDb%20on%20.NET%22,%22key%22:%22NET%22%7D,%7B%22title%22:%22Install%20NEntityDb%20on%20.NET%20Core%22,%22key%22:%22CORE%22,%22tags%22:%22install,installing,setup,startup,start,starting%22%7D,%7B%22title%22:%22Install%20NEntityDb%20on%20.NET%20Framework%22,%22key%22:%22FWK%22,%22tags%22:%22install,installing,setup,startup,start,starting%22%7D,%7B%22title%22:%22Create%20a%20model%22,%22key%22:%22CM%22,%22tags%22:%22create,creating,model,modeling%22%7D,%7B%22title%22:%22Insert,%20read,%20update%20and%20delete%22,%22key%22:%22CRU%22,%22tags%22:%22insert,inserting,read,reading,query,querying,update,updating,delete,deleting,save,saving%22%7D]%7D,%7B%22title%22:%22Create%20a%20model%22,%22key%22:%22CM%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22create,creating,model,modeling%22%7D,%7B%22title%22:%22Entity%20types%22,%22key%22:%22ENT%22,%22tags%22:%22entity,entities,table,tables,schema,schemas%22%7D,%7B%22title%22:%22Properties%22,%22key%22:%22PRO%22,%22tags%22:%22property,properties,column,columns,identity,auto,increment,number,%22,%22sections%22:[%7B%22title%22:%22Identity%20properties%22,%22key%22:%22IP%22%7D,%7B%22title%22:%22Read-only%20properties%22,%22key%22:%22ROP%22%7D]%7D,%7B%22title%22:%22Keys%22,%22key%22:%22KEY%22,%22tags%22:%22keys,keys,primary,identifier,identifiers,id,include,includes%22%7D,%7B%22title%22:%22Relationships%22,%22key%22:%22RS%22,%22tags%22:%22relationship,relationships,foreign,foreign,key,keys,related%22%7D,%7B%22title%22:%22Triggers%22,%22key%22:%22TR%22,%22tags%22:%22trigger,triggers,events,dbtrigger,idbtrigger%22%7D,%7B%22title%22:%22Inheritance%22,%22key%22:%22INH%22,%22tags%22:%22inheritance,hierarchy,extends%22%7D,%7B%22title%22:%22Value%20conversions%22,%22key%22:%22VC%22,%22tags%22:%22conversion,conversion,converter,converters,value,values%22%7D]%7D,%7B%22title%22:%22Query%20data%22,%22key%22:%22QD%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22query,querying,data,read,reading%22%7D,%7B%22title%22:%22Load%20an%20entity%22,%22key%22:%22LE%22,%22tags%22:%22load,entity,single%22%7D,%7B%22title%22:%22Load%20an%20entity%20list%22,%22key%22:%22LEL%22,%22tags%22:%22load,entities,list,page,paging,limit,limiting,skip,skiping,take,taking,total%22%7D,%7B%22title%22:%22Get%20a%20scalar%20value%22,%22key%22:%22GSV%22,%22tags%22:%22get,scalar,value%22%7D,%7B%22title%22:%22Load%20related%20data%22,%22key%22:%22LRD%22,%22tags%22:%22load,related,data,include,includes%22%7D,%7B%22title%22:%22Subqueries%22,%22key%22:%22SQU%22,%22tags%22:%22subquery,subqueries,sub,nested%22%7D,%7B%22title%22:%22Selecting%20data%22,%22key%22:%22SED%22,%22tags%22:%22select,selecting,data%22%7D,%7B%22title%22:%22Filtering%20data%22,%22key%22:%22FD%22,%22tags%22:%22filter,filtering,data,where,condition,conditions,operator,operators%22%7D,%7B%22title%22:%22Ordering%20data%22,%22key%22:%22OBD%22,%22tags%22:%22order,ordering,data,sort,sorting,asc,desc,ascending,descending%22%7D,%7B%22title%22:%22Grouping%20data%22,%22key%22:%22GBD%22,%22tags%22:%22group,grouping,data,agrupation,agrupations,having,aggregate,aggregates%22,%22sections%22:[%7B%22title%22:%22Filtering%20the%20grouped%20data%22,%22key%22:%22FGD%22%7D]%7D,%7B%22title%22:%22Paging%20data%22,%22key%22:%22PD%22,%22tags%22:%22page,paging,limit,limiting,skip,skiping,take,taking,total,data%22%7D,%7B%22title%22:%22Aggregating%20data%22,%22key%22:%22AGD%22,%22tags%22:%22group,grouping,data,aggregate,aggregates,sum,average,max,min,count%22%7D]%7D,%7B%22title%22:%22Save%20data%22,%22key%22:%22SD%22,%22topics%22:[%7B%22title%22:%22Insert%20data%22,%22key%22:%22ID%22,%22tags%22:%22save,saving,data,insert,inserting,data,batch,bulk,function,functions%22%7D,%7B%22title%22:%22Update%20data%22,%22key%22:%22UD%22,%22tags%22:%22save,saving,data,update,updating,function,functions%22%7D,%7B%22title%22:%22Delete%20data%22,%22key%22:%22DD%22,%22tags%22:%22save,saving,data,delete,deleting%22%7D]%7D,%7B%22title%22:%22Computed%20data%22,%22key%22:%22CD%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22computed,compute,calculate,calculated,data,function,functions,join%22%7D,%7B%22title%22:%22Computed%20property%22,%22key%22:%22CP%22,%22tags%22:%22computed,compute,calculate,calculated,data,property,properties,function,functions%22%7D,%7B%22title%22:%22Computed%20relationship%22,%22key%22:%22CR%22,%22tags%22:%22computed,compute,calculate,calculated,data,relationship,relationships,foreign,foreigns%22%7D,%7B%22title%22:%22Computed%20join%20conditions%22,%22key%22:%22CJC%22,%22tags%22:%22computed,compute,calculate,calculated,data,join,condition,conditions,relationship,relationships,foreign,foreigns%22%7D,%7B%22title%22:%22Functions%22,%22key%22:%22FUN%22,%22tags%22:%22computed,compute,calculate,calculated,data,function,function,dbfunction,idbfunction%22%7D]%7D,%7B%22title%22:%22Procedures%22,%22key%22:%22PRO%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22procedure,procedures,stored,save,saving,query,querying,read,reading,schema,schemas%22%7D,%7B%22title%22:%22Query%20data%22,%22key%22:%22QD%22,%22tags%22:%22procedure,procedures,stored,query,querying,read,reading,load,scalar%22%7D,%7B%22title%22:%22Save%20data%22,%22key%22:%22SD%22,%22tags%22:%22procedure,procedures,stored,save,saving,execute,insert,inserting,update,updating,delete,deleting%22%7D]%7D,%7B%22title%22:%22Asynchronous%20Programming%22,%22key%22:%22ASYN%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22async,await%22%7D]%7D,%7B%22title%22:%22Dynamic%20queries%22,%22key%22:%22DIN%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22dynamic,dynamically,query,querying%22%7D,%7B%22title%22:%22Query%20data%22,%22key%22:%22QD%22,%22tags%22:%22dynamic,dynamically,query,querying,read,reading,load,scalar,procedure,procedures%22%7D,%7B%22title%22:%22Save%20data%22,%22key%22:%22SD%22,%22tags%22:%22dynamic,dynamically,save,saving,insert,inserting,update,updating,delete,deleting,procedure,procedures%22%7D]%7D,%7B%22title%22:%22Connections%20and%20transactions%22,%22key%22:%22CAT%22,%22topics%22:[%7B%22title%22:%22Connections%22,%22key%22:%22CON%22,%22tags%22:%22connection,connections,string%22%7D,%7B%22title%22:%22Transactions%22,%22key%22:%22TRA%22,%22tags%22:%22transaction,transactions,isolation,level,commit,rollback%22%7D]%7D,%7B%22title%22:%22Database%20providers%22,%22key%22:%22DBP%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22database,provider,providers,microsoft,sql,sqlserver,server,oracle,my,mysql,postgre,postgresql,db2,ibm,maria,mariadb,sqlite,lite,firebird%22%7D,%7B%22title%22:%22Microsoft%20SQL%20Server%22,%22key%22:%22SQL%22,%22tags%22:%22database,provider,providers,microsoft,sql,sqlserver,server,identity,auto,increment,number,conversion,type,types,azure%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D,%7B%22title%22:%22Oracle%20Database%22,%22key%22:%22ORA%22,%22tags%22:%22database,provider,providers,oracle,identity,auto,increment,number,conversion,type,types,procedure,procedures%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D,%7B%22title%22:%22MySQL,%20MariaDB%20and%20Percona%20Server%22,%22key%22:%22MY%22,%22tags%22:%22database,provider,providers,my,mysql,sql,mariadb,identity,auto,increment,number,conversion,type,types%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D,%7B%22title%22:%22PostgreSQL%22,%22key%22:%22PGS%22,%22tags%22:%22database,provider,providers,postgre,postgresql,sql,identity,auto,increment,number,conversion,type,types,procedure,procedures,function,functions%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D,%7B%22title%22:%22IBM%20Db2%22,%22key%22:%22DB2%22,%22tags%22:%22database,provider,providers,ibm,db2,identity,auto,increment,number,conversion,type,types%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D,%7B%22title%22:%22SQLite%22,%22key%22:%22SLI%22,%22tags%22:%22database,provider,providers,sqlite,sql,lite,identity,auto,increment,number,conversion,type,types,limitation,limitations,function,function,procedure,procedures%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D,%7B%22title%22:%22Firebird%22,%22key%22:%22FIR%22,%22tags%22:%22database,provider,providers,firebird,identity,auto,increment,number,conversion,type,types,execute,block%22,%22sections%22:[%7B%22title%22:%22Identity/auto-increment%20column%22,%22key%22:%22IDC%22%7D,%7B%22title%22:%22Data%20type%20conversion%22,%22key%22:%22DTC%22%7D]%7D]%7D,%7B%22title%22:%22How%20to%22,%22key%22:%22HOW%22,%22topics%22:[%7B%22title%22:%22Create%20a%20DbInstance%22,%22key%22:%22CDI%22,%22tags%22:%22instance,dbinstance,create,creating,configure,configuring,model,modeling,lifetime,connection,connections%22%7D,%7B%22title%22:%22Change%20default%20data%20conversion%22,%22key%22:%22CDC%22,%22tags%22:%22data,type,conversion,conversions,dbtype,enum,enumerator%22%7D,%7B%22title%22:%22Implement%20logical%20delete%22,%22key%22:%22LDE%22,%22tags%22:%22logical,soft,delete,trigger,triggers,dbtrigger,idbtrigger%22%7D,%7B%22title%22:%22Enable%20SQL%20logging%22,%22key%22:%22TSS%22,%22tags%22:%22sql,log,logging,trace,tracing%22%7D,%7B%22title%22:%22Change%20default%20.NET%20data%20provider%22,%22key%22:%22CNP%22,%22tags%22:%22data,provider,ado,mysql,mariadb,percona,sqlite%22%7D,%7B%22title%22:%22Implement%20table-per-hierarchy%20(TPH)%20pattern%22,%22key%22:%22TPH%22,%22tags%22:%22tph,inheritance,hierarchy,extends%22%7D,%7B%22title%22:%22Work%20with%20non-nullable%20types%22,%22key%22:%22WNN%22,%22tags%22:%22type,types,non,nullable,null,value,values%22%7D,%7B%22title%22:%22Register%20a%20license%22,%22key%22:%22LIC%22,%22tags%22:%22license,trial,register%22%7D]%7D,%7B%22title%22:%22My%20first%20app%22,%22key%22:%22APP%22,%22topics%22:[%7B%22title%22:%22Overview%22,%22key%22:%22OV%22,%22tags%22:%22first,app,application,demo,guide%22%7D,%7B%22title%22:%22Create%20a%20project%22,%22key%22:%22CP%22,%22tags%22:%22create,project,solution,app,application%22%7D,%7B%22title%22:%22Configure%20the%20model%22,%22key%22:%22COM%22,%22tags%22:%22create,configure,model,modeling%22%7D,%7B%22title%22:%22Save%20data%22,%22key%22:%22SD%22,%22tags%22:%22save,saving,data,insert,inserting,update,updating,delete,deleting%22%7D,%7B%22title%22:%22Query%20data%22,%22key%22:%22QD%22,%22tags%22:%22query,querying,read,reading,load,loading,data%22%7D,%7B%22title%22:%22Define%20computed%20data%22,%22key%22:%22DCD%22,%22tags%22:%22compute,computed,calculate,calculated,data%22%7D]%7D,%7B%22title%22:%22References%22,%22key%22:%22REF%22,%22topics%22:[%7B%22title%22:%22API%20reference%22,%22key%22:%22API%22,%22tags%22:%22api,reference,interface%22%7D]%7D]");  
+</script>
+

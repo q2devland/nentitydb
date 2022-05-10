@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+
+  
+  
+  <title>Order completed | NEntityDb</title> 
+  <meta property="title" content="Order completed | NEntityDb">
+  <meta property="og:title" content="Order completed | NEntityDb">
+  <meta name="description" content="Purchase completed">
+  <meta property="og:description" content="Purchase completed">
+  <script type="application/ld+json">
+    {"headline":"Order completed | NEntityDb","url":"http://localhost:4000/pages/order-completed.html","description":"Purchase completed","@type":"WebPage","@context":"https://schema.org"}
+  </script><link rel="canonical" href="http://localhost:4000/pages/order-completed.html">
+<meta property="og:locale" content="en_US"> 
+<meta property="og:url" content="http://localhost:4000/pages/order-completed.html">
+<meta property="og:site_name" content="NEntityDb">
+<!-- <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" /> -->
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script src="/assets/js/external/resize-observer.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/header.js"></script>    
+    <script src="/assets/js/data.js"></script>
+      
+      <script src="/assets/js/order-completed.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async data-cookieyes="cookieyes-analytics" src="https://www.googletagmanager.com/gtag/js?id=G-63V0ZZKV9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63V0ZZKV9V');
+</script></head><body class="ms-Fabric"><header>    
+    <nav class="contextMenu">
+        <ul>
+            <li>
+                <a onclick="toggleMenu()" href="/pages/features.html">Features</a>
+            </li>
+            <li>
+                <a onclick="toggleMenu()" href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">Documentation</a>
+            </li>
+            <li>
+                <a onclick="toggleMenu()" href="/pages/pricing.html">Pricing</a>
+            </li>
+            <li>
+                <a onclick="toggleMenu()">Github</a>
+            </li>        
+        </ul>    
+    </nav>
+    <div class="horizontalLayout">
+        <div class="colAvailable"></div>
+        <div class="content">               
+            <div class="minContainer horizontalLayout">                                       
+                <div class="menuButton colAuto">
+                    <button onclick="toggleMenu()" title="Menu">
+                        <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
+                    </button>                
+                </div>
+                <div class="productName colAvailable">
+                    <a rel="author" href="/">NEntityDb</a>
+                </div>
+                <div class="rightSide colAuto"></div>
+            </div>
+            <div class="container">
+                <div class="productName">
+                    <a rel="author" href="/">NEntityDb</a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/pages/features.html">Features</a>
+                        </li>
+                        <li>
+                            <a href="/pages/docs/get-started/install-nentitydb-on-.net.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="/pages/pricing.html">Pricing</a>
+                        </li>        
+                    </ul>
+                </nav>
+
+                <div class="githubIcon">
+                    <a href="https://github.com/q2devland/nentitydb" title="Github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="colAvailable"></div>
+    </div>
+</header><main class="verticalLayout">
+        <div class="orderCompletedLayout horizontalLayout">
+
+    <div class="colAvailable"></div>
+
+    <div class="orderCompletedMain">
+        <div id="orderCompletedWaiting" class="orderCompletedWaiting verticalLayout">                      
+            <div class="loadingContainer">
+                <div class="loadingSymbol"></div>
+            </div>    
+        </div>
+        <div id="orderCompletedResult" class="orderCompletedResult">
+            <div class="verticalLayout alignHorizontalMiddle">
+                <h1>Your purchase was successful!</h1>
+                
+                <p class="orderCompletedThanks">
+                    Thank you {name}. Here is your {productName} license key:
+                </p>
+<div class="header-code">
+<div class="language">License key</div>
+<div style="width:100%;"></div>
+<div class="copyClipboard">
+    <button onclick="copyCodeToClipboard(this)">
+        <div class="icon alignVerticalMiddle"><i class="ms-Icon ms-Icon--Copy" aria-hidden="true"></i></div>
+        <span class="copyText">Copy</span>
+        <div class="iconDone alignVerticalMiddle"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></div>
+    </button>
+</div>
+</div>
+<pre class="lang-json"><code id="responseKeyCode"></code></pre>
+                
+                <p class="responseEmail">
+                    You'll receive an email with your license key in a few minutes.
+                </p>
+<h2>Get started</h2>
+
+<h3>1. Download and Install</h3>
+<p>
+    Install the NuGet package for the database provider you want to use.
+</p>
+<ul>
+    <li>
+        You can use <a href="/pages/docs/get-started/install-nentitydb-on-.net-core.html#net-core-cli" target="_blank">.NET Core CLI</a> 
+        or <a href="/pages/docs/get-started/install-nentitydb-on-.net-core.html#visual-studio-nuget-package-manager-dialog" target="_blank">Visual Studio</a> 
+        to install the Nuget package on .NET Core.
+    </li>
+    <li>
+        You can use <a href="/pages/docs/get-started/install-nentitydb-on-.net-framework.html#visual-studio-nuget-package-manager-dialog" target="_blank">Visual Studio</a> 
+        to install the Nuget package on .NET Framework.
+    </li>
+</ul>
+
+<h3>2. Register your license key</h3>
+<p>
+    You have the following options:
+</p>
+<ul>
+    <li>Loading license from a file.</li>
+    <li>Loading license from a string.</li>
+</ul>
+<p>
+    Click <a href="/pages/docs/how-to/register-a-license.html" target="_blank">here</a> for details.
+</p>
+
+<h3>3. Get started</h3>
+<p>
+    When you're ready, you can start <a href="/pages/docs/create-a-model/overview.html" target="_blank">Creating your model</a> or follow the tutorial 
+    <a href="/pages/docs/my-first-app/overview.html" target="_blank">My first app</a> with NEntityDb.            
+</p>
+</div>
+        </div>
+        <div id="orderCompletedError" class="orderCompletedError">
+            <div class="alignHorizontalMiddle">
+                <p>
+                    The operation has not been completed.              
+                </p>
+            </div>
+            <div class="alignHorizontalMiddle">
+                <p>
+                    An unexpected error has occurred. Try again. If the problem continues, contact us by sending an email to 
+                    <a href="mailto:support@nentitydb.com?Subject=New order">Support</a>             
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="colAvailable"></div>
+
+</div>
+
+<script>
+    sendOrderCompleted('https://localhost:7259/api/v1/sale');
+</script>
+
+    </main><footer>
+    
+        <div class="docsFooter horizontalLayout">
+            <div class="colAvailable">                
+            </div>
+            <ul>
+                <li>
+                    <div class="featuresCard" title="Features">
+                        <a href="/pages/features.html">
+                            <i class="ms-Icon ms-Icon--Bullseye" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="learnCard" title="Learn">
+                        <a href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">
+                            <i class="ms-Icon ms-Icon--Education" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="providersCard" title="Providers">
+                        <a href="/pages/docs/database-providers/overview.html">
+                            <i class="ms-Icon ms-Icon--OfflineStorage" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="colAvailable">                
+            </div>
+        </div><div class="blocks">
+        <div class="blockRow">
+            <div class="block">            
+                <div class="heading">Documentation</div>
+                <ul>
+                    <li>
+                        <a href="/pages/docs/get-started/install-nentitydb-on-.net-core.html">Get started</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/create-a-model/overview.html">Create a model</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/query-data/overview.html">Query data</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/save-data/insert-data.html">Save data</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/computed-data/overview.html">Computed data</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/procedures/overview.html">Procedures</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/dynamic-queries/overview.html">Dynamic queries</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <div class="heading">Developer</div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/q2devland/nentitydb" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/my-first-app/overview.html">My first app</a>
+                    </li>
+                    <li>
+                        <a href="/pages/docs/how-to/register-a-license.html">Register a license</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/q2devland/nentitydb/issues" target="_blank">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blockRow">
+            <div class="block">
+                <div class="heading">Pricing</div>
+                <ul>                    
+                    <li>
+                        <a href="/pages/pricing.html#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/pages/pricing.html#trial">Get a trial license</a>
+                    </li>
+                    <li>
+                        <a href="/pages/pricing.html#faq">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <div class="heading">Corporate</div>
+                <ul>                    
+                    <li>
+                        <a href="mailto:info@nentitydb.com">info@nentitydb.com</a>
+                    </li>
+                    <li>
+                        <a href="/pages/legal/terms-and-conditions.html">Terms and conditions</a>
+                    </li>                    
+                    <li>
+                        <a href="/pages/legal/privacy-policy.html">Privacy policy</a>
+                    </li>                    
+                    <li>
+                        <a href="/pages/legal/cookie-policy.html">Cookie policy</a>
+                    </li>                    
+                    <li>
+                        <a href="#" class="cky-banner-element">Cookie settings</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></body>
+
+</html>
+
+
