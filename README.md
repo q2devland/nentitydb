@@ -109,8 +109,66 @@ using (DbInstance dbInstance = new DbInstance())
         .Returns<int>();
 }
 ```
-For more information about get a scalar value, see see <a href="https://nentitydb.com/pages/docs/query-data/get-a-scalar-value.html">Get a scalar value</a>.
+For more information about get a scalar value, see <a href="https://nentitydb.com/pages/docs/query-data/get-a-scalar-value.html">Get a scalar value</a>.
 
+## Save data
+
+### Insert data
+
+NEntityDb allows you add new instances of your entity types. You can insert a single or multiple instances, insert large numbers of instances and insert data from a query.
+
+```csharp
+using (DbInstance dbInstance = new DbInstance())
+{    
+    int rowsAffected = dbInstance.NonQueryOf<Customer>(new Customer
+    {
+        FirstName = "Clair",
+        LastName = "Guiet",
+        TaxCode = "3720045188",
+        Email = "cguiet@gov.uk",
+        BirthDate = new DateTime(1980, 4, 15),
+        Points = 10
+    })
+    .Insert()
+    .RowsAffected;
+}
+```
+For more information about insert data, see <a href="https://nentitydb.com/pages/docs/save-data/insert-data.html">Insert data</a>.
+
+### Update data
+
+NEntityDb allows you update data from the database.
+
+```csharp
+sing (DbInstance dbInstance = new DbInstance())
+{    
+    int rowsAffected = dbInstance.NonQueryOf<Customer>()
+        .Set(() => new Customer
+        {
+            Email = "cguiet@gov.uk",
+            TaxCode = "3720045188"
+        })
+        .Where(c => c.Id == 10)
+        .Update()
+        .RowsAffected;
+}
+```
+For more information about insert data, see <a href="https://nentitydb.com/pages/docs/save-data/update-data.html">Update data</a>.
+
+### Delete data
+
+NEntityDb allows you delete data from the database.
+
+```csharp
+using (DbInstance dbInstance = new DbInstance())
+{    
+    int rowsAffected = dbInstance.NonQueryOf<Employee>()
+        .Where(e => e.FullName.Contains("a"))
+        .Delete()
+        .RowsAffected;
+}
+```
+For more information about insert data, see <a href="https://nentitydb.com/pages/docs/save-data/delete-data.html">Delete data</a>.
 
 ## How do I get NEntityDb?
 
