@@ -70,9 +70,47 @@ public class DbCustomer: DbEntity<Customer>;
 
 For more information about creating a model, see <a href="https://nentitydb.com/pages/docs/create-a-model/overview.html">Create a model</a>
 
-## Query and save data
+## Query data
 
 NEntityDb uses .NET LINQ Expressions to query and save data from database. The .NET LINQ Expressions enables language-level code expressions to be represented as objects in the form of expression trees.
+
+.NET LINQ Expressions allows you to use C# (or your .NET language to choice) to write strongly typed queries based on your entities. A representation of the .NET Expression query is passed to the database provider, to be translated to SQL language.
+
+### Load single entity
+```csharp
+using (DbInstance dbInstance = new DbInstance())
+{
+    Customer customer = dbInstance.EntityOf<Customer>()
+        .Select(c => Property.ToArray(c.Id, c.FirstName, c.LastName, c.TaxCode, c.Email))
+        .Where(c => c.Id == 1)
+        .FirstOrDefault();
+}
+```
+For more information about load a single entity, see <a href="https://nentitydb.com/pages/docs/query-data/load-an-entity.html">Load an entity</a>.
+
+### Load a list of entities
+```csharp
+using (DbInstance dbInstance = new DbInstance())
+{
+    List<Customer> customers = dbInstance.QueryOf<Customer>()
+        .Select(c => Property.ToArray(c.Id, c.FirstName, c.LastName, c.TaxCode, c.Email))
+        .Where(c => c.FirstName.Contains("a") || c.Email.Contains("a")
+        .ToList();
+}
+```
+For more information about load a list of entities, see <a href="https://nentitydb.com/pages/docs/query-data/load-an-entity-list.html">Load an entity list</a>.
+
+### Get a scalar value
+```csharp
+using (DbInstance dbInstance = new DbInstance())
+{
+    int count = dbInstance.ScalarOf<Customer>()
+        .Select(c => c.Count())
+        .Returns<int>();
+}
+```
+For more information about get a scalar value, see see <a href="https://nentitydb.com/pages/docs/query-data/get-a-scalar-value.html">Get a scalar value</a>.
+
 
 ## How do I get NEntityDb?
 
