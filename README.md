@@ -1,1 +1,1 @@
-# nentitydb
+# nentitydb (.NET ORM)
