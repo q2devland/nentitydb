@@ -225,6 +225,12 @@ To execute the unit tests in your database provider follow the next steps:
 ### Create a test database
 - Create a blank database on your database server.
 - Open the appsettings.*.json file of the corresponding database provider test project. For example, to execute tests on SQL Server, open the appsettings.sqlserver.json file from the NEntityDb.Test.SqlServer project.
+- Set the connection string to the test database in the `connectionString` parameter.
+
+### Set the license key
+- Get your NEntityDb license [here](https://nentitydb.com/pages/pricing.html) or request a trial license [here](https://nentitydb.com/pages/trial.html)
+- Open the appsettings.*.json file of the corresponding database provider test project. For example, to execute tests on SQL Server, open the appsettings.sqlserver.json file from the NEntityDb.Test.SqlServer project.
+- Set the license key in the `license` parameter. For more inforation about register a license, see [How to register a license](https://nentitydb.com/pages/docs/how-to/register-a-license.html)
 
 ### Execute tests
 - Build entire solution
