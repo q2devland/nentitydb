@@ -28,6 +28,10 @@ public class Customer
     public DateTime? DeathDate { get; set; }
     public int? Points { get; set; }
     public DateTime? CreationDate { get; set; }
+    
+    public int? Age { get; set; }
+    public decimal? PendingAmount { get; set; }
+    public Address MainAddress { get; set; }
 }
 ```
 
@@ -52,6 +56,13 @@ public class DbCustomer: DbEntity<Customer>;
         this.Property(c => c.Points).ToColumn("CUS_Points");
         this.Property(c => c.CreationDate).ToColumn("CUS_CreationDate");
         
+        //Computed data
+        this.Property(c => c.Age).Is<Customer>(c => new GetAgeFunction(c.BirthDate, c.DeathDate));
+        this.Property(c => c.PendingAmount).Is<Customer>(c => new QueryRequest<InvoiceLine>()
+                .Select(l => l.Amount.Sum())
+                .Where(l => !l.Invoice.IsPaid.Value && l.Invoice.Customer.Id == c.Id));                
+        this.WithForeignKey<Address>(c => c.MainAddress).Is<Customer, Address>((c, a) => c.Id == a.Customer.Id && a.IsMain.Value);
+                
         this.WithPrimaryKey(c => c.Id);
     }
 }
