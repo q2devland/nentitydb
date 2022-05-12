@@ -12,7 +12,7 @@ NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing
 
 With NEntityDb you can use Fluent APIs to configure your model. Using Fluent APIs in NEntityDb makes code readability easier.
 
-### Create a model
+### Creating a model
 Define the entity classes that make up the model.
 
 ```csharp
@@ -35,7 +35,7 @@ public class Customer
 }
 ```
 
-### Configure a model
+### Configuring a model
 Use fluent API to configure the model.
 
 ```csharp
