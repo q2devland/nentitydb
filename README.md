@@ -230,7 +230,7 @@ To execute the unit tests in your database provider follow the next steps:
 ### Set the license key
 - Get your NEntityDb license [here](https://nentitydb.com/pages/pricing.html) or request a trial license [here](https://nentitydb.com/pages/trial.html)
 - Open the appsettings.*.json file of the corresponding database provider test project. For example, to execute tests on SQL Server, open the appsettings.sqlserver.json file from the NEntityDb.Test.SqlServer project.
-- Set the license key in the `license` parameter. For more inforation about register a license, see [How to register a license](https://nentitydb.com/pages/docs/how-to/register-a-license.html)
+- Set the license key in the `license` parameter. For more inforation about register a license, see [How to register a license](https://nentitydb.com/pages/docs/how-to/register-a-license.html).
 
 ### Execute tests
 - Build entire solution
@@ -246,6 +246,15 @@ When you run the test project, the following steps are executed:
 
 <img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app-results.png" alt="Test app results"/>
 
-## How do I get NEntityDb?
+## Get trial license
+To evaluate NEntityDb you don’t need our permission – all features are unlocked. You just need obtain a trial license from [here](https://nentitydb.com/pages/docs/how-to/register-a-license.html). Once you’re ready to begin development, please purchase an appropriate license key.
 
+Keep the following points in mind when using your trial license:
+
+- With a single trial license you can evaluate all database providers.
+- Trial license has a 30 day duration.
+- You must register trial license as a standard license.
+
+
+## How do I get NEntityDb?
 NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing">here</a>.
