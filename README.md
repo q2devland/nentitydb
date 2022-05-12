@@ -12,6 +12,9 @@ NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing
 
 With NEntityDb you can use Fluent APIs to configure your model. Using Fluent APIs in NEntityDb makes code readability easier.
 
+### Create a model
+Define the entity classes that make up the model.
+
 ```csharp
 public class Customer
 {
@@ -25,6 +28,32 @@ public class Customer
     public DateTime? DeathDate { get; set; }
     public int? Points { get; set; }
     public DateTime? CreationDate { get; set; }
+}
+```
+
+### Configure a model
+Use fluent API to configure the model.
+
+```csharp
+public class DbCustomer: DbEntity<Customer>;
+{
+    public DbCustomer()
+    {
+        this.ToTable("Customers");
+
+        this.Property(c => c.Id).ToColumn("CUS_Id").IsIdentity();
+        this.Property(c => c.FirstName).ToColumn("CUS_FirstName");
+        this.Property(c => c.LastName).ToColumn("CUS_LastName");
+        this.Property(c => c.TaxCode).ToColumn("CUS_TaxCode");
+        this.Property(c => c.Email).ToColumn("CUS_Email");
+        this.Property(c => c.IsActive).ToColumn("CUS_IsActive");
+        this.Property(c => c.BirthDate).ToColumn("CUS_BirthDate");
+        this.Property(c => c.DeathDate).ToColumn("CUS_DeathDate");
+        this.Property(c => c.Points).ToColumn("CUS_Points");
+        this.Property(c => c.CreationDate).ToColumn("CUS_CreationDate");
+        
+        this.WithPrimaryKey(c => c.Id);
+    }
 }
 ```
 
