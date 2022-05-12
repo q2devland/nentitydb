@@ -57,6 +57,8 @@ public class DbCustomer: DbEntity<Customer>;
 }
 ```
 
+For more information about creating a model, see <a href="https://nentitydb.com/pages/docs/create-a-model/overview.html">Create a model</a>
+
 ## Query and save data
 
 NEntityDb uses .NET LINQ Expressions to query and save data from database. The .NET LINQ Expressions enables language-level code expressions to be represented as objects in the form of expression trees.
