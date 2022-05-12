@@ -140,7 +140,7 @@ For more information about insert data, see <a href="https://nentitydb.com/pages
 NEntityDb allows you update data from the database.
 
 ```csharp
-sing (DbInstance dbInstance = new DbInstance())
+using (DbInstance dbInstance = new DbInstance())
 {    
     int rowsAffected = dbInstance.NonQueryOf<Customer>()
         .Set(() => new Customer
@@ -169,6 +169,21 @@ using (DbInstance dbInstance = new DbInstance())
 }
 ```
 For more information about insert data, see <a href="https://nentitydb.com/pages/docs/save-data/delete-data.html">Delete data</a>.
+
+## Asynchronous programming
+NEntityDb provides asynchronous counterparts to all synchronous methods which perform I/O. These have the same effects as the sync methods, and can be used with the C# `async` and `await` keywords.
+
+```csharp
+using (DbInstance dbInstance = new DbInstance())
+{
+    List<Customer> customers = await dbInstance.QueryOf<Customer>()
+        .Select(c => Property.ToArray(c.Id, c.FirstName, c.LastName, c.TaxCode, c.Email))
+        .Where(c => c.FirstName.Contains("a") || c.Email.Contains("a"))        
+        .Page(1, 50)
+        .ToListAsync();
+}
+```
+For more information about asynchronous programming, see <a href="https://nentitydb.com/pages/docs/asynchronous-programming/overview.html">Asynchronous programming</a>.
 
 ## How do I get NEntityDb?
 
