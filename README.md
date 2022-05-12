@@ -237,17 +237,17 @@ To execute the unit tests in your database provider follow the next steps:
 - Run the NEntityDb.Test.App project
 - Select the database provider option
 
+<img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app-results.png" alt="Test app results"/>
+
 When you run the test project, the following steps are executed:
 - connects to the specified database
 - run scripts to create test schemas
 - insert test data into the database
 - runs a set of unit tests that cover all features of NEntityDb
 - the result of the executed tests is showed
-
-<img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app-results.png" alt="Test app results"/>
-
+ 
 ## Get trial license
-To evaluate NEntityDb you don’t need our permission – all features are unlocked. You just need obtain a trial license from [here](https://nentitydb.com/pages/docs/how-to/register-a-license.html). Once you’re ready to begin development, please purchase an appropriate license key.
+To evaluate NEntityDb you don’t need our permission – all features are unlocked. You just need obtain a trial license from [here](https://nentitydb.com/pages/trial.html). Once you’re ready to begin development, please purchase an appropriate license key.
 
 Keep the following points in mind when using your trial license:
 
