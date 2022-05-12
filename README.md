@@ -186,7 +186,16 @@ using (DbInstance dbInstance = new DbInstance())
 For more information about asynchronous programming, see <a href="https://nentitydb.com/pages/docs/asynchronous-programming/overview.html">Asynchronous programming</a>.
 
 ## Database providers
+NEntityDb can access many different databases through libraries called database providers.
 
+Database providers can have specific functionalities, configuration and limitations. For more information about each database provider, see the following topics:
+- [NEntityDb for SQL Server](https://nentitydb.com/pages/docs/database-providers/microsoft-sql-server.html)
+- [NEntityDb for Oracle](https://nentitydb.com/pages/docs/database-providers/oracle-database.html)
+- [NEntityDb for MySQL, MariaDB and Percona](https://nentitydb.com/pages/docs/database-providers/mysql,-mariadb-and-percona-server.html)
+- [NEntityDb for PostgreSQL](https://nentitydb.com/pages/docs/database-providers/postgresql.html)
+- [NEntityDb for IBM Db2](https://nentitydb.com/pages/docs/database-providers/ibm-db2.html)
+- [NEntityDb for Sqlite](https://nentitydb.com/pages/docs/database-providers/sqlite.html)
+- [NEntityDb for Firebird](https://nentitydb.com/pages/docs/database-providers/firebird.html)
 
 ## Learn
 - [Get started](https://nentitydb.com/pages/docs/get-started/install-nentitydb-on-.net.html)
