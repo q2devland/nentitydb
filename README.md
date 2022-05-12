@@ -241,10 +241,10 @@ To execute the unit tests in your database provider follow the next steps:
 
 When you run the test project, the following steps are executed:
 - connects to the specified database
-- run scripts to create test schemas
-- insert test data into the database
+- runs scripts to create test schemas
+- inserts test data into the database
 - runs a set of unit tests that cover all features of NEntityDb
-- the result of the executed tests is showed
+- shows the result of the executed tests
  
 ## Get trial license
 To evaluate NEntityDb you don’t need our permission – all features are unlocked. You just need obtain a trial license from [here](https://nentitydb.com/pages/trial.html). Once you’re ready to begin development, please purchase an appropriate license key.
