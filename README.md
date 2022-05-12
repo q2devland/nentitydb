@@ -231,6 +231,13 @@ To execute the unit tests in your database provider follow the next steps:
 - Run the NEntityDb.Test.App project
 - Select the database provider option
 
+When you run the test project, the following steps are executed:
+- connects to the specified database
+- run scripts to create test schemas
+- insert test data into the database
+- runs a set of unit tests that cover all features of NEntityDb
+- the result of the executed tests is showed
+
 <img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app-results.png" alt="Test app results"/>
 
 ## How do I get NEntityDb?
