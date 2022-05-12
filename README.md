@@ -1,4 +1,4 @@
-# NEntityDb (.NET ORM)
+# NEntityDb: modern ORM for .net
 
 NEntityDb is a modern object-database mapper for .NET that enables developers to work with a database using .NET objects, and eliminating the need for most of the data-access code they usually need to write.
 
