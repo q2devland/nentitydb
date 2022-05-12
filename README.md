@@ -6,5 +6,5 @@ NEntityDb works with many databases, including Microsoft SQL Server, Oracle Data
 
 Please find all the details on <a href="https://nentitydb.com" target="_blank">nentitydb.com</a>
 
-NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing">here</a>.
+NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing" target="_blank">here</a>.
 
