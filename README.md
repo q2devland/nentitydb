@@ -8,6 +8,14 @@ Please find all the details on <a href="https://nentitydb.com">nentitydb.com</a>
 
 NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing">here</a>.
 
+## Create a model
+
+With NEntityDb you can use Fluent APIs to configure your model. Using Fluent APIs in NEntityDb makes code readability easier.
+
+## Query and save data
+
+NEntityDb uses .NET LINQ Expressions to query and save data from database. The .NET LINQ Expressions enables language-level code expressions to be represented as objects in the form of expression trees.
+
 ## How do I get NEntityDb?
 
 NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing">here</a>.
