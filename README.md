@@ -216,6 +216,23 @@ You can test NEntityDb in your database provider with the test application conta
 
 <img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app.png" alt="Test app"/>
 
+To execute the unit tests in your database provider follow the next steps:
+
+### Download test projects
+- Downloand this repository to your local machine.
+- Open test solution on Visual Studio or Visual Studio Code.
+
+### Create a test database
+- Create a blank database on your database server.
+- Open the appsettings.*.json file of the corresponding database provider test project. For example, to execute tests on SQL Server, open the appsettings.sqlserver.json file from the NEntityDb.Test.SqlServer project.
+
+### Execute tests
+- Build entire solution
+- Run the NEntityDb.Test.App project
+- Select the database provider option
+
+<img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app-results.png" alt="Test app results"/>
+
 ## How do I get NEntityDb?
 
 NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing">here</a>.
