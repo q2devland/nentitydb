@@ -211,6 +211,11 @@ Database providers can have specific functionalities, configuration and limitati
 - [My first app](https://nentitydb.com/pages/docs/my-first-app/overview.html)
 - [API reference](https://nentitydb.com/pages/docs/references/api-reference.html)
 
+## Testing
+You can test NEntityDb in your database provider with the test application contained in this repository.
+
+<img src="https://nentitydb.com/assets/img/test-app.png" alt="Test app"/>
+
 ## How do I get NEntityDb?
 
 NEntityDb is available for purchase <a href="https://nentitydb.com/pages/pricing">here</a>.
