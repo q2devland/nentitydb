@@ -214,7 +214,7 @@ Database providers can have specific functionalities, configuration and limitati
 ## Testing
 You can test NEntityDb in your database provider with the test application contained in this repository.
 
-<img src="https://nentitydb.com/assets/img/test-app.png" alt="Test app"/>
+<img src="https://raw.githubusercontent.com/q2devland/nentitydb/gh-pages/assets/img/test-app.png" alt="Test app"/>
 
 ## How do I get NEntityDb?
 
