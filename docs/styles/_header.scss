@@ -9,16 +9,12 @@
             padding-right: 14px;
 
             .navbar-brand {
-                height: unset;
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: 600;
-                color: #262626 !important;
+                height: 100%;
 
-                &:hover {
-                    border-bottom-width: 2px;
-                    border-bottom-style: solid;
-                    padding-bottom: 2px;
+                img {
+                    width: 138px;
+                    bottom: 6px;
+                    position: relative;
                 }
             }
         }

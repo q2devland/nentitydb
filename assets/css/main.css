@@ -388,13 +388,19 @@ header .content .minContainer .menuButton button { background-color: transparent
 
 header .content .minContainer .menuButton button i { font-size: 20px; }
 
+header .content .minContainer .productName { position: relative; height: 100%; }
+
+header .content .minContainer .productName a { top: 0px; position: absolute; }
+
+header .content .minContainer .productName a img { width: 138px; }
+
 header .content .minContainer .rightSide { width: 32px; height: 26px; }
 
 header .content .container { height: 100%; margin-bottom: 2px; padding-left: 5%; padding-right: 5%; }
 
 header .content .container nav { height: 100%; width: 100%; }
 
-header .content .container nav ul { list-style-type: none; margin-left: 0px; margin-bottom: 0px; overflow-x: auto; overflow-y: hidden; white-space: nowrap; display: flex; flex-direction: row; padding-inline-start: 16px; margin-block-start: 0px; margin-block-end: 0px; height: 100%; }
+header .content .container nav ul { list-style-type: none; margin-left: 0px; margin-bottom: 0px; overflow-x: auto; overflow-y: hidden; white-space: nowrap; display: flex; flex-direction: row; padding-inline-start: 16px; margin-block-start: 0px; margin-block-end: 0px; height: 100%; position: relative; top: 5px; }
 
 header .content .container nav ul li { padding-left: 10px; padding-right: 10px; }
 
@@ -404,17 +410,13 @@ header .content .container nav ul li a:hover { border-bottom-width: 2px; border-
 
 header .content .container .githubIcon { height: 100%; width: 16px; padding-top: 2px; }
 
-header .content .container .githubIcon a { cursor: pointer; height: 16px; width: 16px; }
+header .content .container .githubIcon a { cursor: pointer; height: 16px; width: 16px; position: relative; top: 5px; }
 
 header .content .container .githubIcon a svg { height: 16px; width: 16px; }
 
 header .content .container .githubIcon a:hover path { fill: #605e5c; }
 
-header .content .productName { padding: 16px; }
-
-header .content .productName a { text-decoration: none; font-size: 18px; font-weight: 600; color: #262626; }
-
-header .content .productName a:hover { border-bottom-width: 2px; border-bottom-style: solid; padding-bottom: 2px; }
+header .content .productName a img { width: 138px; top: 9px; position: relative; }
 
 @media (max-width: 500px) { header .content .minContainer { display: flex; } header .content .container { display: none; } }
 
@@ -1038,7 +1040,7 @@ main .docsContainer .docsPage .docsLayout .docsIndex .indexBlock .indexContent .
 
 .legalContainer h1 { padding-top: 2rem; padding-left: 2rem; padding-right: 2rem; padding-bottom: 0; text-align: center; font-size: 2.5rem; font-weight: 600; }
 
-.legalContainer h2 { font-size: 1.75rem; font-weight: 600; margin-top: 15px; }
+.legalContainer h2 { font-size: 1.75rem; line-height: 2.25rem; font-weight: 600; margin-top: 15px; }
 
 .legalContainer h3 { font-size: 1.4rem; font-weight: 600; }
 
