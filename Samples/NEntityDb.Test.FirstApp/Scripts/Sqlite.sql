@@ -1,0 +1,28 @@
+﻿CREATE TABLE "main"."Customers"(
+	"CUS_Id" INTEGER NOT NULL,
+	"CUS_FirstName" VARCHAR(50) NOT NULL,
+	"CUS_LastName" VARCHAR(50) NOT NULL,
+	"CUS_Email" VARCHAR(50) NOT NULL,
+	"CUS_CreationDate" DATETIME NOT NULL,
+CONSTRAINT "PK_Customers" PRIMARY KEY ("CUS_Id"));
+
+
+CREATE TABLE "main"."Countries"(
+	"COU_Id" INTEGER NOT NULL,
+	"COU_Name" VARCHAR(50) NOT NULL,
+CONSTRAINT "PK_Countries" PRIMARY KEY ("COU_Id"));
+CREATE UNIQUE INDEX "idx_Countries_Name" ON "Countries"("COU_Name");
+
+
+CREATE TABLE "main"."Addresses"(
+	"ADR_Id" INTEGER NOT NULL,
+	"ADR_Street" VARCHAR(50) NOT NULL,
+	"ADR_PostalCode" VARCHAR(50) NULL,
+	"ADR_City" VARCHAR(50) NOT NULL,
+	"ADR_IsMain" BOOLEAN NOT NULL,
+	"COU_Id" INT NOT NULL,
+	"CUS_Id" INT NOT NULL,
+CONSTRAINT "PK_Addresses" PRIMARY KEY ("ADR_Id"),
+CONSTRAINT "FK_Addresses_Countries" FOREIGN KEY("COU_Id") REFERENCES "Countries" ("COU_Id"),
+CONSTRAINT "FK_Addresses_Countries" FOREIGN KEY("CUS_Id") REFERENCES "Customers" ("CUS_Id"));
+
