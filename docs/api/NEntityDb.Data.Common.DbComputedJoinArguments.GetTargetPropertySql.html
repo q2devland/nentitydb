@@ -15,8 +15,9 @@
      <meta property="og:title" content="DbComputedJoinArguments.GetTargetPropertySql Method
    | NEntityDb API browser ">
      <meta property="og:locale" content="en_US"> 
-     <meta name="description" content="DbComputedJoinArguments.GetTargetPropertySql">
-     <meta property="og:description" content="DbComputedJoinArguments.GetTargetPropertySql">
+     <meta name="description" content="Get the target SQL code from a property defined in a specified expression.">
+     <meta property="og:image" content="https://nentitydb.com/assets/img/logo/ogimage.png">
+     <meta property="og:description" content="Get the target SQL code from a property defined in a specified expression.">
      <meta property="og:site_name" content="NEntityDb API browser"> 
      <!-- Start cookieyes banner -->
       <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0201c74e46313bfefafca224/script.js"></script>
@@ -37,9 +38,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://nentitydb.com/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://nentitydb.com/assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://nentitydb.com/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json | relative_url }}">
+    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json}">
     <meta name="msapplication-TileColor" content="#000">
-    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png | relative_url }}">
+    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png">
     
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -132,8 +133,7 @@
 
 <a id="NEntityDb_Data_Common_DbComputedJoinArguments_GetTargetPropertySql_" data-uid="NEntityDb.Data.Common.DbComputedJoinArguments.GetTargetPropertySql*"></a>
 <h4 id="NEntityDb_Data_Common_DbComputedJoinArguments_GetTargetPropertySql__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Boolean_" data-uid="NEntityDb.Data.Common.DbComputedJoinArguments.GetTargetPropertySql``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">GetTargetPropertySql&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;, Boolean)</h4>
-<div class="markdown level1 summary">
-Get the target SQL code from a specified property.
+<div class="markdown level1 summary"><p>Get the target SQL code from a property defined in a specified expression.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
@@ -162,12 +162,14 @@ Get the target SQL code from a specified property.
     <tr>
       <td><span class="parametername">expression</span></td>
       <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>      
-      <td></td>
+      <td><p>The expression that defines the property.</p>
+</td>
     </tr>
     <tr>
       <td><span class="parametername">useColumnAlias</span></td>
       <td><span class="xref">System.Boolean</span></td>      
-      <td></td>
+      <td><p>A boolean that indicates if column alias must be used.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -182,7 +184,8 @@ Get the target SQL code from a specified property.
   <tbody>
     <tr>
       <td><span class="xref">System.String</span></td>
-      <td></td>
+      <td><p>The target SQL code from a property defined in a specified expression.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -197,7 +200,8 @@ Get the target SQL code from a specified property.
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>The entity type.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -205,7 +209,8 @@ Get the target SQL code from a specified property.
     <div><a class="xref" href="NEntityDb.Data.IDbComputedJoinArguments.GetTargetPropertySql.html#NEntityDb_Data_IDbComputedJoinArguments_GetTargetPropertySql__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Boolean_">IDbComputedJoinArguments.GetTargetPropertySql&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;, Boolean)</a></div>
 <a id="NEntityDb_Data_Common_DbComputedJoinArguments_GetTargetPropertySql_" data-uid="NEntityDb.Data.Common.DbComputedJoinArguments.GetTargetPropertySql*"></a>
 <h4 id="NEntityDb_Data_Common_DbComputedJoinArguments_GetTargetPropertySql_NEntityDb_Model_Property_System_Boolean_" data-uid="NEntityDb.Data.Common.DbComputedJoinArguments.GetTargetPropertySql(NEntityDb.Model.Property,System.Boolean)">GetTargetPropertySql(Property, Boolean)</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Get the target SQL code from a specified property.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -233,12 +238,14 @@ Get the target SQL code from a specified property.
     <tr>
       <td><span class="parametername">property</span></td>
       <td><a class="xref" href="NEntityDb.Model.Property.html">Property</a></td>      
-      <td></td>
+      <td><p>The property.</p>
+</td>
     </tr>
     <tr>
       <td><span class="parametername">useColumnAlias</span></td>
       <td><span class="xref">System.Boolean</span></td>      
-      <td></td>
+      <td><p>A boolean that indicates if column alias must be used.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -253,7 +260,8 @@ Get the target SQL code from a specified property.
   <tbody>
     <tr>
       <td><span class="xref">System.String</span></td>
-      <td></td>
+      <td><p>The target SQL code from a specified property.</p>
+</td>
     </tr>
   </tbody>
 </table>

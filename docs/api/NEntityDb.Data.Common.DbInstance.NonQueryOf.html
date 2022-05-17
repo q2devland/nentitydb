@@ -15,8 +15,9 @@
      <meta property="og:title" content="DbInstance.NonQueryOf Method
    | NEntityDb API browser ">
      <meta property="og:locale" content="en_US"> 
-     <meta name="description" content="DbInstance.NonQueryOf">
-     <meta property="og:description" content="DbInstance.NonQueryOf">
+     <meta name="description" content="Creates a request to insert an instance of `TEntity`.">
+     <meta property="og:image" content="https://nentitydb.com/assets/img/logo/ogimage.png">
+     <meta property="og:description" content="Creates a request to insert an instance of `TEntity`.">
      <meta property="og:site_name" content="NEntityDb API browser"> 
      <!-- Start cookieyes banner -->
       <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0201c74e46313bfefafca224/script.js"></script>
@@ -37,9 +38,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://nentitydb.com/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://nentitydb.com/assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://nentitydb.com/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json | relative_url }}">
+    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json}">
     <meta name="msapplication-TileColor" content="#000">
-    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png | relative_url }}">
+    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png">
     
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -132,8 +133,7 @@
 
 <a id="NEntityDb_Data_Common_DbInstance_NonQueryOf_" data-uid="NEntityDb.Data.Common.DbInstance.NonQueryOf*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_NonQueryOf__1___0_" data-uid="NEntityDb.Data.Common.DbInstance.NonQueryOf``1(``0)">NonQueryOf&lt;TEntity&gt;(TEntity)</h4>
-<div class="markdown level1 summary">
-Creates a request to insert an instance of `TEntity`.
+<div class="markdown level1 summary"><p>Creates a request to insert, update or delete instances of <code>TEntity</code>.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
@@ -148,7 +148,6 @@ Creates a request to insert an instance of `TEntity`.
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public NonQueryRequest&lt;TEntity&gt; NonQueryOf&lt;TEntity&gt;(TEntity value = null)
-
     where TEntity : class</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -164,7 +163,8 @@ Creates a request to insert an instance of `TEntity`.
     <tr>
       <td><span class="parametername">value</span></td>
       <td><span class="xref">TEntity</span></td>      
-      <td></td>
+      <td><p>The value to insert or update.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -179,7 +179,8 @@ Creates a request to insert an instance of `TEntity`.
   <tbody>
     <tr>
       <td><a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest</a>&lt;TEntity&gt;</td>
-      <td></td>
+      <td><p>A request for given type.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -194,7 +195,8 @@ Creates a request to insert an instance of `TEntity`.
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -202,7 +204,8 @@ Creates a request to insert an instance of `TEntity`.
     <div><a class="xref" href="NEntityDb.Data.IDbInstance.NonQueryOf.html#NEntityDb_Data_IDbInstance_NonQueryOf__1___0_">IDbInstance.NonQueryOf&lt;TEntity&gt;(TEntity)</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_NonQueryOf_" data-uid="NEntityDb.Data.Common.DbInstance.NonQueryOf*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_NonQueryOf__1___0___" data-uid="NEntityDb.Data.Common.DbInstance.NonQueryOf``1(``0[])">NonQueryOf&lt;TEntity&gt;(TEntity[])</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a request to insert an array of <code>TEntity</code> with the bulk insert method.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -216,7 +219,6 @@ Creates a request to insert an instance of `TEntity`.
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public NonQueryRequest&lt;TEntity&gt; NonQueryOf&lt;TEntity&gt;(params TEntity[] values)
-
     where TEntity : class</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -232,7 +234,8 @@ Creates a request to insert an instance of `TEntity`.
     <tr>
       <td><span class="parametername">values</span></td>
       <td>TEntity[]</td>      
-      <td></td>
+      <td><p>An array of <code>TEntity</code> to insert.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -247,7 +250,8 @@ Creates a request to insert an instance of `TEntity`.
   <tbody>
     <tr>
       <td><a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest</a>&lt;TEntity&gt;</td>
-      <td></td>
+      <td><p>A request for given type.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -262,7 +266,8 @@ Creates a request to insert an instance of `TEntity`.
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -270,7 +275,8 @@ Creates a request to insert an instance of `TEntity`.
     <div><a class="xref" href="NEntityDb.Data.IDbInstance.NonQueryOf.html#NEntityDb_Data_IDbInstance_NonQueryOf__1___0___">IDbInstance.NonQueryOf&lt;TEntity&gt;(TEntity[])</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_NonQueryOf_" data-uid="NEntityDb.Data.Common.DbInstance.NonQueryOf*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_NonQueryOf__1_System_Linq_Expressions_Expression_System_Func___0___" data-uid="NEntityDb.Data.Common.DbInstance.NonQueryOf``1(System.Linq.Expressions.Expression{System.Func{``0}})">NonQueryOf&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity&gt;&gt;)</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a request to insert an instance of <code>TEntity</code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -284,7 +290,6 @@ Creates a request to insert an instance of `TEntity`.
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public NonQueryRequest&lt;TEntity&gt; NonQueryOf&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity&gt;&gt; expression)
-
     where TEntity : class, new()</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -300,7 +305,8 @@ Creates a request to insert an instance of `TEntity`.
     <tr>
       <td><span class="parametername">expression</span></td>
       <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity&gt;&gt;</td>      
-      <td></td>
+      <td><p>Expression that defines the property and values to insert.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -315,7 +321,8 @@ Creates a request to insert an instance of `TEntity`.
   <tbody>
     <tr>
       <td><a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest</a>&lt;TEntity&gt;</td>
-      <td></td>
+      <td><p>A request for given type.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -330,7 +337,8 @@ Creates a request to insert an instance of `TEntity`.
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>

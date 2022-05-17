@@ -15,8 +15,9 @@
      <meta property="og:title" content="DbInstance.InsertDataAsync Method
    | NEntityDb API browser ">
      <meta property="og:locale" content="en_US"> 
-     <meta name="description" content="DbInstance.InsertDataAsync">
-     <meta property="og:description" content="DbInstance.InsertDataAsync">
+     <meta name="description" content="An asynchronous version of NEntityDb.Data.IDbInstance.InsertData%60(NEntityDb.Model.NonQueryRequest%7b%60%600%7d%5b%5d), which inserts the NEntityDb.Model.NonQueryRequest array asynchronously and returns the NEntityDb.Model.NonQueryResponse.">
+     <meta property="og:image" content="https://nentitydb.com/assets/img/logo/ogimage.png">
+     <meta property="og:description" content="An asynchronous version of NEntityDb.Data.IDbInstance.InsertData%60(NEntityDb.Model.NonQueryRequest%7b%60%600%7d%5b%5d), which inserts the NEntityDb.Model.NonQueryRequest array asynchronously and returns the NEntityDb.Model.NonQueryResponse.">
      <meta property="og:site_name" content="NEntityDb API browser"> 
      <!-- Start cookieyes banner -->
       <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0201c74e46313bfefafca224/script.js"></script>
@@ -37,9 +38,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://nentitydb.com/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://nentitydb.com/assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://nentitydb.com/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json | relative_url }}">
+    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json}">
     <meta name="msapplication-TileColor" content="#000">
-    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png | relative_url }}">
+    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png">
     
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -132,8 +133,7 @@
 
 <a id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_InsertDataAsync__1___0_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync``1(``0)">InsertDataAsync&lt;TEntity&gt;(TEntity)</h4>
-<div class="markdown level1 summary">
-An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsync(NEntityDb.Model.INonQueryRequest%5b%5d)" data-throw-if-not-resolved="false"></xref>, which inserts the <xref href="NEntityDb.Model.INonQueryRequest" data-throw-if-not-resolved="false"></xref> array asynchronously and returns the <xref href="NEntityDb.Model.INonQueryResponse" data-throw-if-not-resolved="false"></xref>.
+<div class="markdown level1 summary"><p>An asynchronous version of <a class="xref" href="NEntityDb.Data.IDbInstance.InsertData.html#NEntityDb_Data_IDbInstance_InsertData__1___0_">InsertData&lt;TEntity&gt;(TEntity)</a>, which inserts an instance asynchronously and returns the <a class="xref" href="NEntityDb.Model.NonQueryResponse-1.html">NonQueryResponse&lt;TEntity&gt;</a>.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
@@ -148,7 +148,6 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public async Task&lt;NonQueryResponse&lt;TEntity&gt;&gt; InsertDataAsync&lt;TEntity&gt;(TEntity value)
-
     where TEntity : class</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -164,7 +163,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <tr>
       <td><span class="parametername">value</span></td>
       <td><span class="xref">TEntity</span></td>      
-      <td></td>
+      <td><p>The instance to insert.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -179,7 +179,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="NEntityDb.Model.NonQueryResponse-1.html">NonQueryResponse</a>&lt;TEntity&gt;&gt;</td>
-      <td></td>
+      <td><p>A task representing the asynchronous operation.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -194,7 +195,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -202,7 +204,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <div><a class="xref" href="NEntityDb.Data.IDbInstance.InsertDataAsync.html#NEntityDb_Data_IDbInstance_InsertDataAsync__1___0_">IDbInstance.InsertDataAsync&lt;TEntity&gt;(TEntity)</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_InsertDataAsync__1_NEntityDb_Model_NonQueryRequest___0__" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync``1(NEntityDb.Model.NonQueryRequest{``0})">InsertDataAsync&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt;)</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>An asynchronous version of <a class="xref" href="NEntityDb.Data.IDbInstance.InsertData.html#NEntityDb_Data_IDbInstance_InsertData__1_NEntityDb_Model_NonQueryRequest___0__">InsertData&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt;)</a>, which inserts the <a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest&lt;TEntity&gt;</a> asynchronously and returns the <a class="xref" href="NEntityDb.Model.NonQueryResponse-1.html">NonQueryResponse&lt;TEntity&gt;</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -216,7 +219,6 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public async Task&lt;NonQueryResponse&lt;TEntity&gt;&gt; InsertDataAsync&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt; request)
-
     where TEntity : class</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -232,7 +234,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <tr>
       <td><span class="parametername">request</span></td>
       <td><a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest</a>&lt;TEntity&gt;</td>      
-      <td></td>
+      <td><p>The request.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -247,7 +250,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="NEntityDb.Model.NonQueryResponse-1.html">NonQueryResponse</a>&lt;TEntity&gt;&gt;</td>
-      <td></td>
+      <td><p>A task representing the asynchronous operation.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -262,7 +266,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -270,7 +275,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <div><a class="xref" href="NEntityDb.Data.IDbInstance.InsertDataAsync.html#NEntityDb_Data_IDbInstance_InsertDataAsync__1_NEntityDb_Model_NonQueryRequest___0__">IDbInstance.InsertDataAsync&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt;)</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_NEntityDb_Model_INonQueryRequest_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync(NEntityDb.Model.INonQueryRequest)">InsertDataAsync(INonQueryRequest)</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>An asynchronous version of <a class="xref" href="NEntityDb.Data.IDbAttachableInstance.InsertData.html#NEntityDb_Data_IDbAttachableInstance_InsertData_NEntityDb_Model_INonQueryRequest_">InsertData(INonQueryRequest)</a>, which executes the <a class="xref" href="NEntityDb.Model.INonQueryRequest.html">INonQueryRequest</a> asynchronously and returns the <a class="xref" href="NEntityDb.Model.INonQueryResponse.html">INonQueryResponse</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -298,7 +304,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <tr>
       <td><span class="parametername">request</span></td>
       <td><a class="xref" href="NEntityDb.Model.INonQueryRequest.html">INonQueryRequest</a></td>      
-      <td></td>
+      <td><p>The request to execute.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -313,7 +320,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="NEntityDb.Model.INonQueryResponse.html">INonQueryResponse</a>&gt;</td>
-      <td></td>
+      <td><p>A task representing the asynchronous operation.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -321,7 +329,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <div><a class="xref" href="NEntityDb.Data.IDbAttachableInstance.InsertDataAsync.html#NEntityDb_Data_IDbAttachableInstance_InsertDataAsync_NEntityDb_Model_INonQueryRequest_">IDbAttachableInstance.InsertDataAsync(INonQueryRequest)</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_InsertDataAsync__1_NEntityDb_Model_NonQueryRequest___0____" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync``1(NEntityDb.Model.NonQueryRequest{``0}[])">InsertDataAsync&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt;[])</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>An asynchronous version of <a class="xref" href="NEntityDb.Data.IDbInstance.InsertData.html#NEntityDb_Data_IDbInstance_InsertData__1_NEntityDb_Model_NonQueryRequest___0____">InsertData&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt;[])</a>, which inserts the <a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest&lt;TEntity&gt;</a> array asynchronously and returns the <a class="xref" href="NEntityDb.Model.NonQueryResponse-1.html">NonQueryResponse&lt;TEntity&gt;</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -335,7 +344,6 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public async Task&lt;NonQueryResponse&lt;TEntity&gt;&gt; InsertDataAsync&lt;TEntity&gt;(params NonQueryRequest&lt;TEntity&gt;[] request)
-
     where TEntity : class</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -351,7 +359,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <tr>
       <td><span class="parametername">request</span></td>
       <td><a class="xref" href="NEntityDb.Model.NonQueryRequest-1.html">NonQueryRequest</a>&lt;TEntity&gt;[]</td>      
-      <td></td>
+      <td><p>The request.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -366,7 +375,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="NEntityDb.Model.NonQueryResponse-1.html">NonQueryResponse</a>&lt;TEntity&gt;&gt;</td>
-      <td></td>
+      <td><p>A task representing the asynchronous operation.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -381,7 +391,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -389,7 +400,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <div><a class="xref" href="NEntityDb.Data.IDbInstance.InsertDataAsync.html#NEntityDb_Data_IDbInstance_InsertDataAsync__1_NEntityDb_Model_NonQueryRequest___0____">IDbInstance.InsertDataAsync&lt;TEntity&gt;(NonQueryRequest&lt;TEntity&gt;[])</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_InsertDataAsync_NEntityDb_Model_INonQueryRequest___" data-uid="NEntityDb.Data.Common.DbInstance.InsertDataAsync(NEntityDb.Model.INonQueryRequest[])">InsertDataAsync(INonQueryRequest[])</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>An asynchronous version of <a class="xref" href="NEntityDb.Data.IDbInstance.InsertDataAsync.html#NEntityDb_Data_IDbInstance_InsertDataAsync_NEntityDb_Model_INonQueryRequest___">InsertDataAsync(INonQueryRequest[])</a>, which inserts the <a class="xref" href="NEntityDb.Model.INonQueryRequest.html">INonQueryRequest</a> array asynchronously and returns the <a class="xref" href="NEntityDb.Model.INonQueryResponse.html">INonQueryResponse</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -417,7 +429,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
     <tr>
       <td><span class="parametername">request</span></td>
       <td><a class="xref" href="NEntityDb.Model.INonQueryRequest.html">INonQueryRequest</a>[]</td>      
-      <td></td>
+      <td><p>The request.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -432,7 +445,8 @@ An asynchronous version of <xref href="NEntityDb.Data.IDbInstance.InsertDataAsyn
   <tbody>
     <tr>
       <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="NEntityDb.Model.INonQueryResponse.html">INonQueryResponse</a>&gt;</td>
-      <td></td>
+      <td><p>A task representing the asynchronous operation.</p>
+</td>
     </tr>
   </tbody>
 </table>

@@ -15,8 +15,9 @@
      <meta property="og:title" content="DbInstance.SelectScalar Method
    | NEntityDb API browser ">
      <meta property="og:locale" content="en_US"> 
-     <meta name="description" content="DbInstance.SelectScalar">
-     <meta property="og:description" content="DbInstance.SelectScalar">
+     <meta name="description" content="Executes the NEntityDb.Model.ScalarRequest and returns the NEntityDb.Model.ScalarResponse.">
+     <meta property="og:image" content="https://nentitydb.com/assets/img/logo/ogimage.png">
+     <meta property="og:description" content="Executes the NEntityDb.Model.ScalarRequest and returns the NEntityDb.Model.ScalarResponse.">
      <meta property="og:site_name" content="NEntityDb API browser"> 
      <!-- Start cookieyes banner -->
       <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0201c74e46313bfefafca224/script.js"></script>
@@ -37,9 +38,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://nentitydb.com/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://nentitydb.com/assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://nentitydb.com/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json | relative_url }}">
+    <link rel="manifest" href="https://nentitydb.com/assets/img/favicon/manifest.json}">
     <meta name="msapplication-TileColor" content="#000">
-    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png | relative_url }}">
+    <meta name="msapplication-TileImage" content="https://nentitydb.com/assets/img/favicon/ms-icon-144x144.png">
     
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -132,8 +133,7 @@
 
 <a id="NEntityDb_Data_Common_DbInstance_SelectScalar_" data-uid="NEntityDb.Data.Common.DbInstance.SelectScalar*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_SelectScalar__1_NEntityDb_Model_ScalarRequest___0__" data-uid="NEntityDb.Data.Common.DbInstance.SelectScalar``1(NEntityDb.Model.ScalarRequest{``0})">SelectScalar&lt;TEntity&gt;(ScalarRequest&lt;TEntity&gt;)</h4>
-<div class="markdown level1 summary">
-Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resolved="false"></xref> and returns the <xref href="NEntityDb.Model.IScalarResponse" data-throw-if-not-resolved="false"></xref>.
+<div class="markdown level1 summary"><p>Executes the <a class="xref" href="NEntityDb.Model.ScalarRequest-1.html">ScalarRequest&lt;TEntity&gt;</a> and returns the <a class="xref" href="NEntityDb.Model.ScalarResponse-1.html">ScalarResponse&lt;TEntity&gt;</a>.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
@@ -148,7 +148,6 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
           </button>
       </div>
   </div>  <pre><code class="lang-csharp hljs">public ScalarResponse&lt;TEntity&gt; SelectScalar&lt;TEntity&gt;(ScalarRequest&lt;TEntity&gt; request)
-
     where TEntity : class</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
@@ -164,7 +163,8 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
     <tr>
       <td><span class="parametername">request</span></td>
       <td><a class="xref" href="NEntityDb.Model.ScalarRequest-1.html">ScalarRequest</a>&lt;TEntity&gt;</td>      
-      <td></td>
+      <td><p>The request.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -179,7 +179,8 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
   <tbody>
     <tr>
       <td><a class="xref" href="NEntityDb.Model.ScalarResponse-1.html">ScalarResponse</a>&lt;TEntity&gt;</td>
-      <td></td>
+      <td><p>The response of the request.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -194,7 +195,8 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
   <tbody>
     <tr>
       <td><span class="parametername">TEntity</span></td>
-      <td></td>
+      <td><p>Entity type</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -202,7 +204,8 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
     <div><a class="xref" href="NEntityDb.Data.IDbInstance.SelectScalar.html#NEntityDb_Data_IDbInstance_SelectScalar__1_NEntityDb_Model_ScalarRequest___0__">IDbInstance.SelectScalar&lt;TEntity&gt;(ScalarRequest&lt;TEntity&gt;)</a></div>
 <a id="NEntityDb_Data_Common_DbInstance_SelectScalar_" data-uid="NEntityDb.Data.Common.DbInstance.SelectScalar*"></a>
 <h4 id="NEntityDb_Data_Common_DbInstance_SelectScalar_NEntityDb_Model_IScalarRequest_" data-uid="NEntityDb.Data.Common.DbInstance.SelectScalar(NEntityDb.Model.IScalarRequest)">SelectScalar(IScalarRequest)</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Executes the <a class="xref" href="NEntityDb.Model.IScalarRequest.html">IScalarRequest</a> and returns the <a class="xref" href="NEntityDb.Model.IScalarResponse.html">IScalarResponse</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <div class="codewrapper">
   <div class="header-code">
@@ -230,7 +233,8 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
     <tr>
       <td><span class="parametername">request</span></td>
       <td><a class="xref" href="NEntityDb.Model.IScalarRequest.html">IScalarRequest</a></td>      
-      <td></td>
+      <td><p>The request to execute.</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -245,7 +249,8 @@ Executes the <xref href="NEntityDb.Model.IScalarRequest" data-throw-if-not-resol
   <tbody>
     <tr>
       <td><a class="xref" href="NEntityDb.Model.IScalarResponse.html">IScalarResponse</a></td>
-      <td></td>
+      <td><p>The response of the request.</p>
+</td>
     </tr>
   </tbody>
 </table>
