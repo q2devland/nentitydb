@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'MySqlConnector'">
+        <Aliases>MySqlConnectorAlias</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+  
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySqlConnector" Version="0.60.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NEntityDb.Data.Common\NEntityDb.Data.Common.csproj" />
+    <ProjectReference Include="..\NEntityDb.Data\NEntityDb.Data.csproj" />
+    <ProjectReference Include="..\NEntityDb.Model\NEntityDb.Model.csproj" />
+    <ProjectReference Include="..\NEntityDb.Test.Data.Model\NEntityDb.Test.Data.Model.csproj" />
+    <ProjectReference Include="..\NEntityDb.Test.Data\NEntityDb.Test.Data.csproj" />
+    <ProjectReference Include="..\NEntityDb.Test.Model\NEntityDb.Test.Model.csproj" />
+    <ProjectReference Include="..\NEntityDb.Test\NEntityDb.Test.csproj" />
+    <ProjectReference Include="..\NEntityDb\NEntityDb.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.mariadb.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

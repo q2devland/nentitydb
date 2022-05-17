@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Include="NEntityDb.Data.SqlServer" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\NEntityDb.Test.Data.Model\NEntityDb.Test.Data.Model.csproj" />
+	  <ProjectReference Include="..\NEntityDb.Test.Model\NEntityDb.Test.Model.csproj" />
+	  <ProjectReference Include="..\NEntityDb.Unit.Test\NEntityDb.Unit.Test.csproj" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.sqlserver.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

@@ -1,0 +1,172 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlServer", "SqlServer", "{1D33D615-15CF-4ABF-80EC-5E321137F0A7}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\SqlServer\DATA.sql = Scripts\SqlServer\DATA.sql
+		Scripts\SqlServer\SCHEMA.sql = Scripts\SqlServer\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Model", "NEntityDb.Test.Model\NEntityDb.Test.Model.csproj", "{E2B32AD8-CA7F-47E3-8C79-E9EAA3F19644}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Data.Model", "NEntityDb.Test.Data.Model\NEntityDb.Test.Data.Model.csproj", "{35F785F5-B5E6-4A31-BF16-AE95003DC863}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.SqlServer", "NEntityDb.Test.SqlServer\NEntityDb.Test.SqlServer.csproj", "{5A8A09C7-A542-4544-BC89-457291C85FEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Data", "NEntityDb.Test.Data\NEntityDb.Test.Data.csproj", "{755FCC5D-CB61-45D9-BEC4-B2EC41F38CFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MySql", "MySql", "{4583B91C-BE99-4CAD-A605-7B9CFF57E19F}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\MySql\DATA.sql = Scripts\MySql\DATA.sql
+		Scripts\MySql\SCHEMA.sql = Scripts\MySql\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.MySql", "NEntityDb.Test.MySql\NEntityDb.Test.MySql.csproj", "{D3042A0E-4463-4B25-8D55-E92AABBCABBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oracle", "Oracle", "{B4BE86AD-3497-484A-A1B9-E5BB80E53F65}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Oracle\DATA.sql = Scripts\Oracle\DATA.sql
+		Scripts\Oracle\IDENTITY_ALWAYS.sql = Scripts\Oracle\IDENTITY_ALWAYS.sql
+		Scripts\Oracle\IDENTITY_DEFAULT.sql = Scripts\Oracle\IDENTITY_DEFAULT.sql
+		Scripts\Oracle\SCHEMA.sql = Scripts\Oracle\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Oracle", "NEntityDb.Test.Oracle\NEntityDb.Test.Oracle.csproj", "{946597D0-5A99-4D67-A02E-65193454A35F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostgreSql", "PostgreSql", "{A9B6B994-5BBF-4970-B379-B50C770EEE5F}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\PostgreSql\DATA.sql = Scripts\PostgreSql\DATA.sql
+		Scripts\PostgreSql\IDENTITY_ALWAYS.sql = Scripts\PostgreSql\IDENTITY_ALWAYS.sql
+		Scripts\PostgreSql\IDENTITY_DEFAULT.sql = Scripts\PostgreSql\IDENTITY_DEFAULT.sql
+		Scripts\PostgreSql\SCHEMA.sql = Scripts\PostgreSql\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.PostgreSql", "NEntityDb.Test.PostgreSql\NEntityDb.Test.PostgreSql.csproj", "{65AEADAA-DE88-43C6-84DD-957AC6326454}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.App", "NEntityDb.Test.App\NEntityDb.Test.App.csproj", "{AA103BDF-3C49-411F-9314-69A69E3FEEC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Db2", "Db2", "{47B1689B-550C-43B1-81CB-6FAC8373D9FA}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Db2\DATA.sql = Scripts\Db2\DATA.sql
+		Scripts\Db2\SCHEMA.sql = Scripts\Db2\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Db2", "NEntityDb.Test.Db2\NEntityDb.Test.Db2.csproj", "{094DCEAA-87D8-4E1F-8EEB-CE839B8F3341}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MariaDb", "MariaDb", "{89AB4B35-93DE-4DF6-9209-20204051DF47}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\MariaDb\DATA.sql = Scripts\MariaDb\DATA.sql
+		Scripts\MariaDb\SCHEMA.sql = Scripts\MariaDb\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sqlite", "Sqlite", "{4566516E-B1E0-4AA6-BE8F-17E51CDBD6CC}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\SqLite\DATA.sql = Scripts\SqLite\DATA.sql
+		Scripts\SqLite\SCHEMA.sql = Scripts\SqLite\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Sqlite", "NEntityDb.Test.SqLite\NEntityDb.Test.Sqlite.csproj", "{7F78E2A4-79E5-4F63-A0F2-DF703FF4EE2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Firebird", "Firebird", "{CA2DE72E-5006-42C5-94CD-D62EB6DA1A31}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Firebird\DATA.sql = Scripts\Firebird\DATA.sql
+		Scripts\Firebird\SCHEMA.sql = Scripts\Firebird\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Test.Firebird", "NEntityDb.Test.Firebird\NEntityDb.Test.Firebird.csproj", "{91C75D90-8EDA-46D4-BD06-A12454C7F07B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Percona", "Percona", "{3D5AC382-6F4E-40B2-854D-A02390B232CD}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Percona\DATA.sql = Scripts\Percona\DATA.sql
+		Scripts\Percona\SCHEMA.sql = Scripts\Percona\SCHEMA.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEntityDb.Unit.Test", "NEntityDb.Unit.Test\NEntityDb.Unit.Test.csproj", "{EB21DE17-7ED7-4C95-8A2C-D83B34078CF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2B32AD8-CA7F-47E3-8C79-E9EAA3F19644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B32AD8-CA7F-47E3-8C79-E9EAA3F19644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B32AD8-CA7F-47E3-8C79-E9EAA3F19644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B32AD8-CA7F-47E3-8C79-E9EAA3F19644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F785F5-B5E6-4A31-BF16-AE95003DC863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F785F5-B5E6-4A31-BF16-AE95003DC863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F785F5-B5E6-4A31-BF16-AE95003DC863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F785F5-B5E6-4A31-BF16-AE95003DC863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A8A09C7-A542-4544-BC89-457291C85FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8A09C7-A542-4544-BC89-457291C85FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8A09C7-A542-4544-BC89-457291C85FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8A09C7-A542-4544-BC89-457291C85FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{755FCC5D-CB61-45D9-BEC4-B2EC41F38CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755FCC5D-CB61-45D9-BEC4-B2EC41F38CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755FCC5D-CB61-45D9-BEC4-B2EC41F38CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755FCC5D-CB61-45D9-BEC4-B2EC41F38CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3042A0E-4463-4B25-8D55-E92AABBCABBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3042A0E-4463-4B25-8D55-E92AABBCABBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3042A0E-4463-4B25-8D55-E92AABBCABBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3042A0E-4463-4B25-8D55-E92AABBCABBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946597D0-5A99-4D67-A02E-65193454A35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946597D0-5A99-4D67-A02E-65193454A35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946597D0-5A99-4D67-A02E-65193454A35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946597D0-5A99-4D67-A02E-65193454A35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65AEADAA-DE88-43C6-84DD-957AC6326454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AEADAA-DE88-43C6-84DD-957AC6326454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AEADAA-DE88-43C6-84DD-957AC6326454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AEADAA-DE88-43C6-84DD-957AC6326454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA103BDF-3C49-411F-9314-69A69E3FEEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA103BDF-3C49-411F-9314-69A69E3FEEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA103BDF-3C49-411F-9314-69A69E3FEEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA103BDF-3C49-411F-9314-69A69E3FEEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094DCEAA-87D8-4E1F-8EEB-CE839B8F3341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094DCEAA-87D8-4E1F-8EEB-CE839B8F3341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094DCEAA-87D8-4E1F-8EEB-CE839B8F3341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094DCEAA-87D8-4E1F-8EEB-CE839B8F3341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F78E2A4-79E5-4F63-A0F2-DF703FF4EE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F78E2A4-79E5-4F63-A0F2-DF703FF4EE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F78E2A4-79E5-4F63-A0F2-DF703FF4EE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F78E2A4-79E5-4F63-A0F2-DF703FF4EE2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C75D90-8EDA-46D4-BD06-A12454C7F07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C75D90-8EDA-46D4-BD06-A12454C7F07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C75D90-8EDA-46D4-BD06-A12454C7F07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C75D90-8EDA-46D4-BD06-A12454C7F07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB21DE17-7ED7-4C95-8A2C-D83B34078CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB21DE17-7ED7-4C95-8A2C-D83B34078CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB21DE17-7ED7-4C95-8A2C-D83B34078CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB21DE17-7ED7-4C95-8A2C-D83B34078CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{1D33D615-15CF-4ABF-80EC-5E321137F0A7} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{5A8A09C7-A542-4544-BC89-457291C85FEE} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{4583B91C-BE99-4CAD-A605-7B9CFF57E19F} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{D3042A0E-4463-4B25-8D55-E92AABBCABBC} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{B4BE86AD-3497-484A-A1B9-E5BB80E53F65} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{946597D0-5A99-4D67-A02E-65193454A35F} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{A9B6B994-5BBF-4970-B379-B50C770EEE5F} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{65AEADAA-DE88-43C6-84DD-957AC6326454} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{47B1689B-550C-43B1-81CB-6FAC8373D9FA} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{094DCEAA-87D8-4E1F-8EEB-CE839B8F3341} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{89AB4B35-93DE-4DF6-9209-20204051DF47} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{4566516E-B1E0-4AA6-BE8F-17E51CDBD6CC} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{7F78E2A4-79E5-4F63-A0F2-DF703FF4EE2A} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{CA2DE72E-5006-42C5-94CD-D62EB6DA1A31} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+		{91C75D90-8EDA-46D4-BD06-A12454C7F07B} = {B9CE794E-FDA2-470D-BB92-5F1D8930B4C1}
+		{3D5AC382-6F4E-40B2-854D-A02390B232CD} = {AEB86F1B-F2B7-429B-8BE8-7B64E4F3FD4E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8390048-A943-43B8-9629-DBFE367585F3}
+	EndGlobalSection
+EndGlobal

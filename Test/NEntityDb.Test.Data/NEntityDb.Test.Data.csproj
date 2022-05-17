@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NEntityDb.Data.Common" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.Db2" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.Firebird" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.MySql" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.Oracle" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.PostgreSql" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.Sqlite" Version="1.1.0" />
+    <PackageReference Include="NEntityDb.Data.SqlServer" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NEntityDb.Test.Model\NEntityDb.Test.Model.csproj" />
+  </ItemGroup>
+
+</Project>
