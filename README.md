@@ -261,7 +261,7 @@ To run this sample application on your local machine follow the steps below:
 - Open the license.json file.
 - Paste your NEntityDb license.
 - [Install](https://nentitydb.com/pages/docs/get-started/install-nentitydb-on-.net.html) the specific NEntityDb provider nuget package.
-- Open DbFirstApp.cs file.
+- Open DbFirstApp.cs file and derive the `DbFirstApp` class from specific provider `DbInstance` class.
 - Build entire solution.
 - Run the NEntityDb.Test.FirstApp project.
 
