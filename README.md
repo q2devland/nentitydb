@@ -245,7 +245,26 @@ When you run the test project, the following steps are executed:
 - inserts test data into the database
 - runs a set of unit tests that cover all features of NEntityDb
 - shows the result of the executed tests
- 
+
+## Samples
+
+### My first app
+To run this sample application on your local machine follow the steps below:
+- Downloand this repository to your local machine.
+- Open samples solution on Visual Studio or Visual Studio Code.
+- Create a new database on your database server.
+- Run the database schema creation script located in the `Scripts` folder.
+- Open the appsettings.json file.
+- Set the created database connection string in the `ConnectionStrings` parameter.
+- Set the created database schema in the `Schema` parameter.
+- Get your NEntityDb license [here](https://nentitydb.com/pages/pricing.html) or request a trial license [here](https://nentitydb.com/pages/trial.html)
+- Open the license.json file.
+- Paste your NEntityDb license.
+- [Install](https://nentitydb.com/pages/docs/get-started/install-nentitydb-on-.net.html) the specific NEntityDb provider nuget package.
+- Open DbFirstApp.cs file.
+- Build entire solution.
+- Run the NEntityDb.Test.FirstApp project.
+
 ## Get trial license
 To evaluate NEntityDb you don’t need our permission – all features are unlocked. You just need obtain a trial license from [here](https://nentitydb.com/pages/trial.html). Once you’re ready to begin development, please purchase an appropriate license key.
 
