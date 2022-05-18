@@ -36,7 +36,7 @@
 <meta name="msapplication-TileColor" content="#000">
 <meta name="msapplication-TileImage" content="">  
       <!-- Start cookieyes banner -->
-      <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/7d47ff3e52236705ab72a8ae/script.js"></script>
+      <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0201c74e46313bfefafca224/script.js"></script>
       <!-- End cookieyes banner --><!-- <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" /> -->
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
@@ -48,7 +48,15 @@
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/header.js"></script>    
     <script src="/assets/js/data.js"></script>
-    </head><body class="ms-Fabric"><header>    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async data-cookieyes="cookieyes-analytics" src="https://www.googletagmanager.com/gtag/js?id=G-8F0F3EN6ZE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8F0F3EN6ZE');
+</script></head><body class="ms-Fabric"><header>    
     <nav class="contextMenu">
         <ul>
             <li>
@@ -481,7 +489,7 @@
 </div>
 
 <script>
-    const purchaseUrl = "https://fwk.gumroad.com/l";
+    const purchaseUrl = "https://q2devland.gumroad.com/l";
     if (purchaseUrl) {
         const buttons = Array.from(document.querySelectorAll(".buy"));
         buttons.forEach(b => {
@@ -490,25 +498,25 @@
                 let url = null;
                 switch (name) {
                     case "SqlServer":
-                        url = "fwk-test";
+                        url = "nentitydb-sqlserver";
                         break
                     case "Oracle":
-                        url = "fwk-test";
+                        url = "nentitydb-oracle";
                         break
                     case "MySql":
-                        url = "fwk-test";
+                        url = "nentitydb-mysql";
                         break
                     case "PostgreSql":
-                        url = "fwk-test";
+                        url = "nentitydb-postgresql";
                         break
                     case "Db2":
-                        url = "fwk-test";
+                        url = "nentitydb-db2";
                         break
                     case "Sqlite":
-                        url = "fwk-test";
+                        url = "nentitydb-sqlite";
                         break
                     case "Firebird":
-                        url = "fwk-test";
+                        url = "nentitydb-firebird";
                         break
                 }
                 if (url) {
