@@ -1,4 +1,6 @@
 function sendTrial(url) {
+    const btnSend = document.querySelector("#btnSend");
+    btnSend.disabled = true;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {      
       try {
@@ -22,6 +24,9 @@ function sendTrial(url) {
       }  
       catch (e) {
         showSendTrialError(e);
+      }
+      finally {
+        btnSend.disabled = false;
       }
     };
         
