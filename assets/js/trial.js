@@ -1,6 +1,5 @@
 function sendTrial(url) {
-    const btnSend = document.querySelector("#btnSend");
-    btnSend.disabled = true;
+    const btnSend = document.querySelector("#btnSend");    
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {      
       try {
@@ -38,6 +37,7 @@ function sendTrial(url) {
 
       xhttp.open('POST', url, true);
       xhttp.setRequestHeader('Content-Type', 'application/json');
+      btnSend.disabled = true;
       xhttp.send(JSON.stringify(trial));
     }
     else {
